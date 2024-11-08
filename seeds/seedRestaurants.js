@@ -67,7 +67,7 @@ module.exports = [
   {
     restaurant_name: "Shin Minori",
     img: "https://sethlui.com/wp-content/uploads/2015/04/shin-minori-jap-buffet-3173.jpg",
-    address: "",
+    address: "81 Clemenceau Ave, #03-15/16, Singapore 239917",
     opening_hours:
       "Lunch: 12pm to 2.30pm (last order 2.15pm), Afternoon High Tea: 3pm to 6pm (last order 5.15pm),Dinner: 6.15pm to 10.15pm (last order 9.45pm)",
     price_range_adult: "from $36.90++ to $79.90++",
