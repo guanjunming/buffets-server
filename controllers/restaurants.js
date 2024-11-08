@@ -13,4 +13,16 @@ const seedRestaurantsData = async (req, res) => {
   }
 };
 
-module.exports = { seedRestaurantsData };
+const getRestaurants = async (req, res) => {
+  try {
+    const restaurants = await Restaurants.find();
+    res.json(restaurants);
+  } catch (error) {
+    console.error(error.message);
+    res
+      .status(500)
+      .json({ status: "error", msg: "Failed to fetch restaurants" });
+  }
+};
+
+module.exports = { seedRestaurantsData, getRestaurants };
