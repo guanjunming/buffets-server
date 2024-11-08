@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const CustomError = require("./utils/customError");
 const userRoutes = require("./routes/userRoutes");
+const restaurantsRoutes = require("./routes/restaurantsRoutes");
 
 connectDB();
 const app = express();
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api", userRoutes);
+app.use("/api", restaurantsRoutes);
 
 app.use((req, res, next) => {
   const error = new CustomError("Can't find route on server.", 404);
