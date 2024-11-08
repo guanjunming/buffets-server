@@ -10,4 +10,6 @@ router.post("/login", catchAsync(authController.login));
 
 router.use(checkAuth);
 
+// protected routes below
+
 module.exports = router;

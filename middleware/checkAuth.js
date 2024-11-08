@@ -19,7 +19,9 @@ const checkAuth = (req, res, next) => {
     req.userData = decoded;
     next();
   } catch (error) {
-    return next(new CustomError("Authentication failed! Please log in.", 401));
+    return next(
+      new CustomError("Token invalid or expired. Please log in again.", 401)
+    );
   }
 };
 
