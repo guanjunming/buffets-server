@@ -1,12 +1,16 @@
 require("dotenv").config();
 const express = require("express");
 const connectDB = require("./db/db");
-const CustomError = require("./utils/customError");
+const cors = require("cors");
 
+const CustomError = require("./utils/customError");
 const userRoutes = require("./routes/userRoutes");
 
 connectDB();
 const app = express();
+
+app.use(cors());
+app.options("*", cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
