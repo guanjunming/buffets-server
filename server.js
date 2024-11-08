@@ -3,11 +3,15 @@ const express = require("express");
 const connectDB = require("./db/db");
 const CustomError = require("./utils/customError");
 
+const userRoutes = require("./routes/userRoutes");
+
 connectDB();
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use("/api", userRoutes);
 
 app.use((req, res, next) => {
   const error = new CustomError("Can't find route on server.", 404);
