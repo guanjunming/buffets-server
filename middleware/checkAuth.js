@@ -11,7 +11,9 @@ const checkAuth = (req, res, next) => {
   }
 
   if (!token) {
-    return next(new CustomError("Authentication failed! Please log in.", 401));
+    return next(
+      new CustomError("Authentication failed! No token provided.", 401)
+    );
   }
 
   try {

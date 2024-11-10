@@ -7,9 +7,6 @@ const router = express.Router();
 
 router.post("/signup", catchAsync(authController.signup));
 router.post("/login", catchAsync(authController.login));
-
-router.use(checkAuth);
-
-// protected routes below
+router.post("/refresh", authController.refresh);
 
 module.exports = router;
