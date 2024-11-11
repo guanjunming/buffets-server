@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const restaurantSchema = new mongoose.Schema({
-  restaurant_name: {
+  name: {
     type: String,
     required: true,
   },
@@ -13,23 +13,24 @@ const restaurantSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  opening_hours: {
+  openingHours: {
     type: String,
     required: true,
   },
-  price_range_adult: {
-    type: String,
-    required: true,
+  adultPrice: {
+    min: { type: Number, required: true },
+    max: { type: Number },
   },
-  price_range_child: {
-    type: String,
+  childPrice: {
+    min: { type: Number },
+    max: { type: Number },
   },
   description: {
     type: String,
     required: true,
   },
   cuisine: {
-    type: String,
+    type: [String],
     required: true,
   },
   website: {
