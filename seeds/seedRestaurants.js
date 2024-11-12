@@ -39,7 +39,7 @@ module.exports = [
   },
   {
     name: "Carousel - Royal Plaza on Scotts",
-    img: "https://lh3.googleusercontent.com/p/AF1QipPo6pkeWqyYAkvmRiPhVYQUbEZy63g4fbCQdvql=s1360-w1360-h1020",
+    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/88/04/69/fresh-seafood-selection.jpg?w=1100&h=-1&s=1",
     address:
       "Royal Plaza on Scotts, Lobby Level, 25 Scotts Road, Singapore 228220",
     openingHours: "Every Wednesday 6.30pm to 9.30pm",
