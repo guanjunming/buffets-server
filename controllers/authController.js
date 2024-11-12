@@ -2,7 +2,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 const CustomError = require("../utils/customError");
-const { json } = require("express");
 
 const sendAccessToken = (user, statusCode, res) => {
   const claims = {
@@ -90,6 +89,4 @@ const refresh = (req, res, next) => {
   }
 };
 
-exports.signup = signup;
-exports.login = login;
-exports.refresh = refresh;
+module.exports = { signup, login, refresh };

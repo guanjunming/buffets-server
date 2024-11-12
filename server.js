@@ -2,10 +2,9 @@ require("dotenv").config();
 const express = require("express");
 const connectDB = require("./db/db");
 const cors = require("cors");
-
 const restaurantsRoutes = require("./routes/restaurantsRoutes");
-const CustomError = require("./utils/customError");
 const userRoutes = require("./routes/userRoutes");
+const CustomError = require("./utils/customError");
 
 connectDB();
 const app = express();
@@ -16,7 +15,7 @@ app.options("*", cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/api", restaurantsRoutes);
+app.use("/api/restaurants", restaurantsRoutes);
 app.use("/api", userRoutes);
 
 app.use((req, res, next) => {

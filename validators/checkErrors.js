@@ -1,13 +1,13 @@
 const { validationResult } = require("express-validator");
+const CustomError = require("../utils/customError");
 
 const checkErrors = (req, res, next) => {
   const errors = validationResult(req);
-
   if (!errors.isEmpty()) {
-    res.status(400).json({ status: "error", msg: errors.array() });
-  } else {
-    next();
+    return next(new CustomError("Invalid inputs.", 422));
   }
+
+  next();
 };
 
 module.exports = checkErrors;

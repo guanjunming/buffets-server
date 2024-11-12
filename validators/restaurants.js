@@ -1,7 +1,7 @@
-const { body } = require("express-validator");
+const { body, param } = require("express-validator");
 
 const validateIdInBody = [body("id", "id is invalid").notEmpty().isMongoId()];
 
-module.exports = {
-  validateIdInBody,
-};
+const validateIdInParam = [param("id", "id is invalid").notEmpty().isMongoId()];
+
+module.exports = { validateIdInBody, validateIdInParam };

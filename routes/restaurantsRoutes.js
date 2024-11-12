@@ -1,15 +1,20 @@
 const express = require("express");
+const restaurantsController = require("../controllers/restaurantsController");
 const {
-  seedRestaurantsData,
-  getRestaurants,
-  getRestaurantById,
-} = require("../controllers/restaurants");
-const { validateIdInBody } = require("../validators/restaurants");
+  validateIdInParam,
+  validateIdInBody,
+} = require("../validators/restaurants");
 const checkErrors = require("../validators/checkErrors");
+
 const router = express.Router();
 
-router.get("/restaurants/seed", seedRestaurantsData);
-router.get("/restaurants", getRestaurants);
-router.post("/restaurants", validateIdInBody, checkErrors, getRestaurantById);
+router.get("/seed", restaurantsController.seedRestaurantsData);
+router.get("/", restaurantsController.getRestaurants);
+router.get(
+  "/:id",
+  validateIdInParam,
+  checkErrors,
+  restaurantsController.getRestaurantById
+);
 
 module.exports = router;
