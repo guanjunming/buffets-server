@@ -18,7 +18,7 @@ const getRestaurants = async (req, res, next) => {
     const restaurants = await Restaurant.find();
     res.json(restaurants);
   } catch (error) {
-    return next(new CustomError("Failed to fetch restaurants.", 500));
+    return next(new CustomError("Failed to fetch restaurants", 500));
   }
 };
 
