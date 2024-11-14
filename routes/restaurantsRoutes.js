@@ -10,6 +10,7 @@ const router = express.Router();
 
 router.get("/seed", restaurantsController.seedRestaurantsData);
 router.get("/", restaurantsController.getRestaurants);
+router.get("/search", restaurantsController.getRestaurantsByQuery);
 router.get(
   "/:id",
   validateIdInParam,
