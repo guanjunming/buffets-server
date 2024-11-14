@@ -7,6 +7,7 @@ const rateLimit = require("express-rate-limit");
 const CustomError = require("./utils/customError");
 const restaurantsRoutes = require("./routes/restaurantsRoutes");
 const userRoutes = require("./routes/userRoutes");
+const reviewRoutes = require("./routes/reviewRoutes");
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -27,6 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 // routes
 app.use("/api/restaurants", restaurantsRoutes);
 app.use("/api", userRoutes);
+app.use("/api", reviewRoutes);
 
 // route not found
 app.use((req, res, next) => {
