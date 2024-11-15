@@ -8,9 +8,11 @@ const validateReviewData = [
     min: 1,
     max: 120,
   }),
-  //   body("review", "Review must have a minimum of 100 characters.").isLength({
-  //     min: 100,
-  //   }),
+  body("review", "Review must have a minimum of 100 characters.")
+    .trim()
+    .isLength({
+      min: 100,
+    }),
   body("rating", "Rating must be between 1 to 5.").isInt({ min: 1, max: 5 }),
 ];
 

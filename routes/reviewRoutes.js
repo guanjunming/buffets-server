@@ -13,14 +13,14 @@ router.get("/reviews/seed", catchAsync(reviewController.seedReviews));
 router.use(checkAuth);
 
 router.get(
-  "/restaurants/:id/review",
+  "/reviews/:id",
   validateIdInParam,
   checkErrors,
   reviewController.getReviewByRestaurantId
 );
 
 router.post(
-  "/restaurants/:id/review",
+  "/reviews/:id",
   validateIdInParam,
   validateReviewData,
   checkErrors,

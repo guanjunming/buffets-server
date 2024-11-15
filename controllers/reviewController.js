@@ -11,12 +11,12 @@ const getReviewByRestaurantId = async (req, res, next) => {
       );
     }
 
-    const userReview = await Review.findOne({
+    const review = await Review.findOne({
       user: req.user.id,
       restaurant: req.params.id,
     });
 
-    res.json({ restaurant, userReview });
+    res.json(review);
   } catch (error) {
     next(new CustomError("Failed to fetch restaurant review.", 500));
   }
@@ -25,6 +25,23 @@ const getReviewByRestaurantId = async (req, res, next) => {
 const createReview = async (req, res, next) => {
   try {
     const { title, review, rating } = req.body;
+
+    const restaurant = await Restaurant.findById(req.params.id);
+    if (!restaurant) {
+      return next(
+        new CustomError("No restaurant found with provided id.", 404)
+      );
+    }
+
+    const existingReview = await Review.findOne({
+      user: req.user.id,
+      restaurant: req.params.id,
+    });
+    if (existingReview) {
+      return next(
+        new CustomError("Review already exists, please update.", 400)
+      );
+    }
 
     const newReview = await Review.create({
       restaurant: req.params.id,
@@ -56,7 +73,6 @@ const updateReview = async (req, res, next) => {
     existingReview.title = title;
     existingReview.review = review;
     existingReview.rating = rating;
-    existingReview.updatedAt = Date.now();
 
     await existingReview.save();
     res.json(existingReview);
