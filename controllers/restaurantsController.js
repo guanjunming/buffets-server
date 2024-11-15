@@ -91,7 +91,7 @@ const getRestaurantsByQuery = async (req, res, next) => {
         },
       ],
     })
-      .populate("reviews")
+      .populate("reviews", "rating")
       .sort({ [sortBy]: sortOrder });
 
     res.json(restaurants);

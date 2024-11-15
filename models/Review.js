@@ -19,9 +19,6 @@ const reviewSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  updatedAt: {
-    type: Date,
-  },
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
@@ -32,13 +29,6 @@ const reviewSchema = new mongoose.Schema({
     ref: "Restaurant",
     required: true,
   },
-});
-
-reviewSchema.pre("save", function (next) {
-  if (this.isModified() && !this.isNew) {
-    this.updatedAt = Date.now();
-  }
-  next();
 });
 
 module.exports = mongoose.model("Review", reviewSchema);

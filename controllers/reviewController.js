@@ -1,5 +1,26 @@
+const Restaurant = require("../models/Restaurant");
 const Review = require("../models/Review");
 const CustomError = require("../utils/customError");
+
+const getReviewByRestaurantId = async (req, res, next) => {
+  try {
+    const restaurant = await Restaurant.findById(req.params.id);
+    if (!restaurant) {
+      return next(
+        new CustomError("No restaurant found with provided id.", 404)
+      );
+    }
+
+    const userReview = await Review.findOne({
+      user: req.user.id,
+      restaurant: req.params.id,
+    });
+
+    res.json({ restaurant, userReview });
+  } catch (error) {
+    next(new CustomError("Failed to fetch restaurant review.", 500));
+  }
+};
 
 const createReview = async (req, res, next) => {
   try {
@@ -25,7 +46,7 @@ const updateReview = async (req, res, next) => {
 
     const existingReview = await Review.findById(req.params.id);
     if (!existingReview) {
-      return next(new CustomError("Review not found.", 404));
+      return next(new CustomError("No review found with provided id.", 404));
     }
 
     if (!existingReview.user.equals(req.user.id)) {
@@ -48,7 +69,7 @@ const deleteReview = async (req, res, next) => {
   try {
     const existingReview = await Review.findById(req.params.id);
     if (!existingReview) {
-      return next(new CustomError("Review not found.", 404));
+      return next(new CustomError("No review found with provided id.", 404));
     }
 
     if (!existingReview.user.equals(req.user.id)) {
@@ -99,4 +120,10 @@ const seedReviews = async (req, res, next) => {
   res.json({ message: "Review seeded successfully." });
 };
 
-module.exports = { createReview, updateReview, deleteReview, seedReviews };
+module.exports = {
+  getReviewByRestaurantId,
+  createReview,
+  updateReview,
+  deleteReview,
+  seedReviews,
+};

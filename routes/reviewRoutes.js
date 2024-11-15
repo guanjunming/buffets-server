@@ -12,21 +12,29 @@ router.get("/reviews/seed", catchAsync(reviewController.seedReviews));
 
 router.use(checkAuth);
 
+router.get(
+  "/restaurants/:id/review",
+  validateIdInParam,
+  checkErrors,
+  reviewController.getReviewByRestaurantId
+);
+
 router.post(
-  "/restaurants/:id/reviews",
+  "/restaurants/:id/review",
   validateIdInParam,
   validateReviewData,
   checkErrors,
   reviewController.createReview
 );
+
 router.patch(
   "/reviews/:id",
-
   validateIdInParam,
   validateReviewData,
   checkErrors,
   reviewController.updateReview
 );
+
 router.delete(
   "/reviews/:id",
   validateIdInParam,
