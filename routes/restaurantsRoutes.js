@@ -1,9 +1,6 @@
 const express = require("express");
 const restaurantsController = require("../controllers/restaurantsController");
-const {
-  validateIdInParam,
-  validateIdInBody,
-} = require("../validators/restaurants");
+const { validateIdInParam } = require("../validators/commonValidators");
 const checkErrors = require("../validators/checkErrors");
 
 const router = express.Router();
