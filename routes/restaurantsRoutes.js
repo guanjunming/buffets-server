@@ -8,6 +8,7 @@ const router = express.Router();
 router.get("/seed", restaurantsController.seedRestaurantsData);
 router.get("/", restaurantsController.getRestaurants);
 router.get("/maxprice", restaurantsController.getRestaurantsMaxPrice);
+router.get("/cuisines", restaurantsController.getRestaurantsCuisines);
 router.get("/search", restaurantsController.getRestaurantsByQuery);
 router.get(
   "/:id",

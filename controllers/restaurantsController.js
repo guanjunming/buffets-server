@@ -80,11 +80,24 @@ const getRestaurantsMaxPrice = async (req, res, next) => {
   }
 };
 
+const getRestaurantsCuisines = async (req, res, next) => {
+  try {
+    const cuisines = await Restaurant.distinct("cuisine");
+    res.json(cuisines);
+  } catch (error) {
+    return next(new CustomError("Failed to fetch all cuisines", 500));
+  }
+};
+
 const getRestaurantsByQuery = async (req, res, next) => {
   try {
     const search = req.query?.search
       ? req.query?.search.replace(/[^a-zA-Z0-9]/g, "")
       : "";
+    const cuisines = await Restaurant.distinct("cuisine");
+    const selectedCuisine = req.query?.cuisine
+      ? req.query?.cuisine.split("c").map((item) => cuisines[parseInt(item)])
+      : cuisines;
     const sortBy = req.query?.sortBy === "price" ? "adultPrice.min" : "name";
     const sortOrder = req.query?.sortOrder === "desc" ? -1 : 1;
 
@@ -97,6 +110,7 @@ const getRestaurantsByQuery = async (req, res, next) => {
             { cuisine: { $elemMatch: { $regex: search, $options: "i" } } },
           ],
         },
+        { cuisine: { $in: selectedCuisine } },
         {
           "adultPrice.min": {
             $gte: req.query?.minPrice || 0,
@@ -119,5 +133,6 @@ module.exports = {
   getRestaurants,
   getRestaurantById,
   getRestaurantsMaxPrice,
+  getRestaurantsCuisines,
   getRestaurantsByQuery,
 };
