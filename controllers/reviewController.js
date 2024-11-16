@@ -22,7 +22,7 @@ const getReviewByRestaurantId = async (req, res, next) => {
   }
 };
 
-const createReview = async (req, res, next) => {
+const createorUpdateReview = async (req, res, next) => {
   try {
     const { title, review, rating } = req.body;
 
@@ -37,23 +37,32 @@ const createReview = async (req, res, next) => {
       user: req.user.id,
       restaurant: req.params.id,
     });
+
+    let message;
+    let statusCode = 200;
+
     if (existingReview) {
-      return next(
-        new CustomError("Review already exists, please update.", 400)
-      );
+      existingReview.title = title;
+      existingReview.review = review;
+      existingReview.rating = rating;
+
+      await existingReview.save();
+      message = "Review updated successfully.";
+    } else {
+      await Review.create({
+        restaurant: req.params.id,
+        user: req.user.id,
+        title,
+        review,
+        rating,
+      });
+      message = "Review created successfully.";
+      statusCode = 201;
     }
 
-    const newReview = await Review.create({
-      restaurant: req.params.id,
-      user: req.user.id,
-      title,
-      review,
-      rating,
-    });
-
-    res.status(201).json(newReview);
+    res.status(statusCode).json({ message });
   } catch (error) {
-    next(new CustomError("Failed to create review.", 500));
+    next(new CustomError("Failed to create or update review.", 500));
   }
 };
 
@@ -75,7 +84,7 @@ const updateReview = async (req, res, next) => {
     existingReview.rating = rating;
 
     await existingReview.save();
-    res.json(existingReview);
+    res.json({ message: "Review updated successfully." });
   } catch (error) {
     next(new CustomError("Failed to update review.", 500));
   }
@@ -138,7 +147,7 @@ const seedReviews = async (req, res, next) => {
 
 module.exports = {
   getReviewByRestaurantId,
-  createReview,
+  createorUpdateReview,
   updateReview,
   deleteReview,
   seedReviews,
