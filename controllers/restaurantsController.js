@@ -14,7 +14,34 @@ const seedRestaurantsData = async (req, res, next) => {
 
 const getRestaurants = async (req, res, next) => {
   try {
-    const restaurants = await Restaurant.find();
+    const restaurants = await Restaurant.aggregate([
+      {
+        $lookup: {
+          from: "reviews",
+          localField: "_id",
+          foreignField: "restaurant",
+          as: "reviews",
+        },
+      },
+      {
+        $addFields: {
+          reviewCount: { $size: "$reviews" },
+          averageRating: {
+            $cond: {
+              if: { $gt: [{ $size: "$reviews" }, 0] },
+              then: {
+                $round: [{ $avg: "$reviews.rating" }, 1],
+              },
+              else: 0,
+            },
+          },
+        },
+      },
+      {
+        $project: { reviews: 0 }, // exclude reviews
+      },
+    ]);
+
     res.json(restaurants);
   } catch (error) {
     return next(new CustomError("Failed to fetch restaurants", 500));
@@ -23,10 +50,16 @@ const getRestaurants = async (req, res, next) => {
 
 const getRestaurantById = async (req, res, next) => {
   try {
-    const restaurant = await Restaurant.findById(req.params.id);
+    const restaurant = await Restaurant.findById(req.params.id).populate({
+      path: "reviews",
+      options: { sort: { createdAt: -1 } },
+      populate: { path: "user", select: "name" },
+    });
+
     if (!restaurant) {
       return next(new CustomError("No restaurant found with provided id", 404));
     }
+
     res.json(restaurant);
   } catch (error) {
     return next(new CustomError("Failed to fetch restaurant", 500));
@@ -71,7 +104,9 @@ const getRestaurantsByQuery = async (req, res, next) => {
           },
         },
       ],
-    }).sort({ [sortBy]: sortOrder });
+    })
+      .populate("reviews", "rating")
+      .sort({ [sortBy]: sortOrder });
 
     res.json(restaurants);
   } catch (error) {

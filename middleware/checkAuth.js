@@ -18,7 +18,7 @@ const checkAuth = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.ACCESS_SECRET);
-    req.userData = decoded;
+    req.user = decoded;
     next();
   } catch (error) {
     return next(

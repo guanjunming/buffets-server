@@ -1,7 +1,8 @@
 const express = require("express");
 const authController = require("../controllers/authController");
+const userController = require("../controllers/userController");
 const catchAsync = require("../utils/catchAsync");
-const checkAuth = require("../middleware/checkAuth");
+
 const {
   validateSignupData,
   validateLoginData,
@@ -23,5 +24,7 @@ router.post(
   catchAsync(authController.login)
 );
 router.post("/refresh", authController.refresh);
+
+router.get("/users/:id", userController.getUserProfileById);
 
 module.exports = router;
