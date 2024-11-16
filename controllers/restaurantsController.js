@@ -66,6 +66,20 @@ const getRestaurantById = async (req, res, next) => {
   }
 };
 
+const getRestaurantsMaxPrice = async (req, res, next) => {
+  try {
+    const restaurantsMaxPrice = await Restaurant.aggregate([
+      { $group: { _id: null, maxPrice: { $max: "$adultPrice.min" } } },
+      { $project: { _id: 0, maxPrice: 1 } },
+    ]);
+    res.json(restaurantsMaxPrice);
+  } catch (error) {
+    return next(
+      new CustomError("Failed to fetch maximum price of all restaurants", 500)
+    );
+  }
+};
+
 const getRestaurantsByQuery = async (req, res, next) => {
   try {
     const search = req.query?.search
@@ -104,5 +118,6 @@ module.exports = {
   seedRestaurantsData,
   getRestaurants,
   getRestaurantById,
+  getRestaurantsMaxPrice,
   getRestaurantsByQuery,
 };

@@ -11,7 +11,7 @@ const reviewRoutes = require("./routes/reviewRoutes");
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 100,
+  max: 900,
   standardHeaders: true,
   legacyHeaders: false,
 });
