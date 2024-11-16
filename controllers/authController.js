@@ -17,11 +17,7 @@ const sendAccessToken = (user, statusCode, res) => {
     expiresIn: "30d",
   });
 
-  res.status(statusCode).json({
-    accessToken,
-    refreshToken,
-    userData: { userId: user.id, email: user.email },
-  });
+  res.status(statusCode).json({ accessToken, refreshToken, userData: claims });
 };
 
 const signup = async (req, res, next) => {
