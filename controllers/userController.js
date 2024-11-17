@@ -2,9 +2,9 @@ const User = require("../models/User");
 const Review = require("../models/Review");
 const CustomError = require("../utils/customError");
 
-const getUserProfileById = async (req, res, next) => {
+const getUserProfile = async (req, res, next) => {
   try {
-    const user = await User.findById(req.params.id);
+    const user = await User.findById(req.user.id);
     if (!user) {
       return next(new CustomError("No user found with provided id.", 404));
     }
@@ -52,7 +52,7 @@ const getUserProfileById = async (req, res, next) => {
       },
     ]);
     res.json({
-      user: { name: user.name, email: user.email, createdAt: user.createdAt },
+      user: { _id: user._id, name: user.name, createdAt: user.createdAt },
       reviews,
     });
   } catch (error) {
@@ -60,4 +60,4 @@ const getUserProfileById = async (req, res, next) => {
   }
 };
 
-module.exports = { getUserProfileById };
+module.exports = { getUserProfile };

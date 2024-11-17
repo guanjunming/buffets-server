@@ -8,6 +8,7 @@ const {
   validateLoginData,
 } = require("../validators/userValidators");
 const checkErrors = require("../validators/checkErrors");
+const checkAuth = require("../middleware/checkAuth");
 
 const router = express.Router();
 
@@ -25,6 +26,6 @@ router.post(
 );
 router.post("/refresh", authController.refresh);
 
-router.get("/users/:id", userController.getUserProfileById);
+router.get("/profile", checkAuth, userController.getUserProfile);
 
 module.exports = router;
