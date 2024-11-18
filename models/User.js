@@ -18,6 +18,13 @@ const userSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  favourites: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Restaurant",
+      default: [],
+    },
+  ],
 });
 
 module.exports = mongoose.model("User", userSchema);
