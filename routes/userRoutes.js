@@ -26,6 +26,9 @@ router.post(
 );
 router.post("/refresh", authController.refresh);
 
+router.patch("/updatePassword", checkAuth, authController.updatePassword);
+router.patch("/updateProfile", checkAuth, authController.updateProfile);
+
 router.get("/profile", checkAuth, userController.getUserProfile);
 
 module.exports = router;
