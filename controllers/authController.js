@@ -96,7 +96,7 @@ const updatePassword = async (req, res, next) => {
 
     const isSamePassword = await bcrypt.compare(passwordCurrent, user.password);
     if (!isSamePassword) {
-      return next(new CustomError("Current password does not match.", 401));
+      return next(new CustomError("Current password is incorrect.", 403));
     }
 
     const hashedPassword = await bcrypt.hash(passwordNew, 12);
@@ -111,15 +111,22 @@ const updatePassword = async (req, res, next) => {
 
 const updateProfile = async (req, res, next) => {
   try {
-    const updatedUser = await User.findByIdAndUpdate(req.user.id, {
-      name: req.body.name,
-    });
+    const updatedUser = await User.findByIdAndUpdate(
+      req.user.id,
+      {
+        name: req.body.name,
+      },
+      { new: true }
+    );
 
     if (!updatedUser) {
       return next(new CustomError("No user found with provided id.", 404));
     }
 
-    res.json({ message: "Profile updated successfully." });
+    res.json({
+      message: "success",
+      data: { name: updatedUser.name },
+    });
   } catch (error) {
     next(new CustomError("Failed to update profile.", 500));
   }
