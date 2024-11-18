@@ -4,8 +4,8 @@ module.exports = [
     name: "Atrium Restaurant — Holiday Inn Singapore Atrium",
     img: [
       "https://singaporeatrium.holidayinn.com/uploads/singaporeatrium/Dining/Atrium_restaurant/Atrium%20Restaurant%20Buffet%202023_1.png",
-      "https://lh3.googleusercontent.com/p/AF1QipMiEKns97ZDsWyAQRYI06RxJzhga9LfqJI7ANPh=s1360-w1360-h1020",
-      "https://lh3.googleusercontent.com/p/AF1QipMowxhwYy6RkMgt1tZWji0yd6svzB8Af0BjNs-D=s1360-w1360-h1020",
+      "https://images.augustman.com/wp-content/uploads/sites/2/2023/04/06175216/20230221-HolidayInn0335-2-scaled.jpg",
+      "https://cdn.eatigo.com/restaurant-image/1514_9bcac1b8-6d61-482d-9058-bc036acdf6d3.png",
       "https://digital.ihg.com/is/image/ihg/holiday-inn-singapore-7283557995-4x3?wid=733",
       "https://thehalalfoodblog.com/wp-content/uploads/2019/10/Group-Shot-1-1536x1024.jpg",
     ],
