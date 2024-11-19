@@ -27,8 +27,8 @@ app.use(express.urlencoded({ extended: false }));
 
 // routes
 app.use("/api/restaurants", restaurantsRoutes);
-app.use("/api", userRoutes);
 app.use("/api/reviews", reviewRoutes);
+app.use("/api", userRoutes);
 
 // route not found
 app.use((req, res, next) => {

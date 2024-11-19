@@ -8,7 +8,7 @@ const { validateIdInParam } = require("../validators/commonValidators");
 
 const router = express.Router();
 
-router.get("/reviews/seed", catchAsync(reviewController.seedReviews));
+router.get("/seed", reviewController.seedReviewsData);
 
 router.use(checkAuth);
 
