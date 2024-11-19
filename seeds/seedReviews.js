@@ -288,15 +288,6 @@ module.exports = [
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {
-    title: "One of the best!",
-    review:
-      "One of the best dining experiences I've had. The chef's special was a unique blend of flavors that worked beautifully together. The staff made sure we were comfortable and well-attended.",
-    rating: 5,
-    user: "673c0b58fe4f013c2b82726c",
-    restaurant: "673637b66f6515f00b51fb75",
-    createdAt: "2024-11-16T14:05:38.833+00:00",
-  },
-  {
     title: "Great Service",
     review:
       "Awesome Food and great service. Enjoyed the 1 for 1 promotion too!",
