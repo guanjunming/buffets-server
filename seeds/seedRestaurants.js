@@ -1,5 +1,6 @@
 module.exports = [
   {
+    _id: "673637b66f6515f00b51fb69",
     name: "Atrium Restaurant — Holiday Inn Singapore Atrium",
     img: [
       "https://singaporeatrium.holidayinn.com/uploads/singaporeatrium/Dining/Atrium_restaurant/Atrium%20Restaurant%20Buffet%202023_1.png",
@@ -20,6 +21,7 @@ module.exports = [
       "https://singaporeatrium.holidayinn.com/atrium-restaurant-buffet-details",
   },
   {
+    _id: "673637b66f6515f00b51fb6a",
     name: "Sun's Cafe — Hotel Grand Pacific Singapore",
     img: [
       "https://image-tc.galaxy.tf/wijpeg-buxfp6mkhopb7ysnukc7yrf58/wide.jpg?crop=0%2C102%2C1920%2C1080",
@@ -38,6 +40,7 @@ module.exports = [
     website: "	https://www.hotelgrandpacific.com.sg/promotions/peranakan-buffet",
   },
   {
+    _id: "673637b66f6515f00b51fb6b",
     name: "The Orchard Cafe — Orchard Hotel Singapore",
     img: [
       "https://www.millenniumhotels.com/mhb-media/regions/asia/siingapore/orchardhotelsingapore/dining/images/theorchardcafe/orchard_hotel_singapore_the_orchard_cafe_header_image_1280x688-(4).jpg?rev=8896b093d84844ac83135d5b7029218f",
@@ -56,6 +59,7 @@ module.exports = [
       "https://www.millenniumhotels.com/en/offers/asia/orchard-hotel-singapore/dining/orchard-cafe/heritage-buffet/ ",
   },
   {
+    _id: "673637b66f6515f00b51fb6c",
     name: "Carousel - Royal Plaza on Scotts",
     img: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/88/04/69/fresh-seafood-selection.jpg?w=1100&h=-1&s=1",
@@ -75,6 +79,7 @@ module.exports = [
     website: "http://carouselbuffet.com.sg/",
   },
   {
+    _id: "673637b66f6515f00b51fb6d",
     name: "Tung Lok Seafood Buffet",
     img: [
       "https://sgeats.net/wp-content/uploads/2024/07/Tunglok-Seafood-Singapore.webp",
@@ -94,6 +99,7 @@ module.exports = [
     website: "https://www.tunglok.com/en/tunglok-seafood",
   },
   {
+    _id: "673637b66f6515f00b51fb6e",
     name: "Shin Minori",
     img: [
       "https://sethlui.com/wp-content/uploads/2015/04/shin-minori-jap-buffet-3173.jpg",
@@ -113,6 +119,7 @@ module.exports = [
     website: "http://butterflyportals.com:8890/phone/shinminori01ue/#/",
   },
   {
+    _id: "673637b66f6515f00b51fb6f",
     name: "Tenkaichi",
     img: [
       "https://tenkaichi.com.sg/wp-content/uploads/2023/06/tenkaichi-menu3-500.jpg",
@@ -132,6 +139,7 @@ module.exports = [
     website: "www.tenkaichi.com.sg",
   },
   {
+    _id: "673637b66f6515f00b51fb70",
     name: "Mitsuba",
     img: [
       "https://eatapp.co/singapore-restaurants/images/mitsuba-japanese-restaurant-6-eu-tong-sen-street-the-central-03-88-clarke-quay-central-singapore-059817-singapore-restaurant-1.jpg?height=500&width=850",
@@ -151,6 +159,7 @@ module.exports = [
     website: "https://www.mitsuba.com.sg/",
   },
   {
+    _id: "673637b66f6515f00b51fb71",
     name: "Kiseki Japanese Buffet Restaurant",
     img: [
       "https://www.kisekirestaurant.com.sg/wp-content/uploads/2022/05/Kiseki-Buffet-Counter-1.jpg",
@@ -170,6 +179,7 @@ module.exports = [
     website: "https://www.kisekirestaurant.com.sg/",
   },
   {
+    _id: "673637b66f6515f00b51fb72",
     name: "Irodori Japanese Restaurant",
     img: [
       "https://irodorirestaurant.com.sg/images/bannerirodori2023.jpg",
@@ -189,6 +199,7 @@ module.exports = [
     website: "http://irodorirestaurant.com.sg/",
   },
   {
+    _id: "673637b66f6515f00b51fb73",
     name: "Don Dae Bak",
     img: [
       "https://qul.imgix.net/acee6253-a5e2-44fa-95f3-e26f43d5030a/627247_sld.jpg?auto=format&w=1024",
@@ -207,6 +218,7 @@ module.exports = [
     website: "https://don-dae-bak.com/",
   },
   {
+    _id: "673637b66f6515f00b51fb74",
     name: "CHOGA Korean Restaurant ",
     img: [
       "https://scontent.fsin14-1.fna.fbcdn.net/v/t1.6435-9/136088121_1091557377979837_3330935419419865794_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=aR2cRT4yNosQ7kNvgHcbhEh&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AqruYWP6FRjcPVoztYmxE71&oh=00_AYA9l-es781mZyiIk-POeDgINM8WrxFNPlgooSC7FMpJQg&oe=675D883D",
@@ -225,6 +237,7 @@ module.exports = [
     website: "https://www.chogakoreanrestaurant.com/",
   },
   {
+    _id: "673637b66f6515f00b51fb75",
     name: "K.COOK Korean BBQ Buffet",
     img: [
       "https://www.thebestsingapore.com/wp-content/uploads/2017/06/K.COOK-Korean-BBQ-Buffet.jpg",
@@ -245,6 +258,7 @@ module.exports = [
     website: "https://www.facebook.com/kcooksg/",
   },
   {
+    _id: "673637b66f6515f00b51fb76",
     name: "Cheese Story Mookata ",
     img: [
       "https://singaporebeauty.com/wp-content/uploads/2024/06/cheese-story-mookata-buffet-location.jpg",
@@ -263,6 +277,7 @@ module.exports = [
     website: "https://www.facebook.com/CheeseStoryMookata",
   },
   {
+    _id: "673637b66f6515f00b51fb77",
     name: "Armoury Steak House",
     img: [
       "https://live.staticflickr.com/65535/53088978200_4909a7f1f8_b.jpg",
@@ -282,6 +297,7 @@ module.exports = [
     website: "https://www.armourysteaks.com/",
   },
   {
+    _id: "673637b66f6515f00b51fb78",
     name: "Carnivore Brazilian Churrascaria",
     img: [
       "https://qul.imgix.net/d768c2a7-21d9-4293-aafc-9ae8aa50dfa4/352042_sld.jpg?auto=format&w=1024",
@@ -301,6 +317,7 @@ module.exports = [
     website: "https://www.carnivore.com.sg/",
   },
   {
+    _id: "673637b66f6515f00b51fb79",
     name: "Asian Market Café",
     img: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/12/c5/5c/asian-market-cafe-halal.jpg",
@@ -319,6 +336,7 @@ module.exports = [
     website: "https://www.fairmont-singapore.com/dining/asian-market-cafe/",
   },
   {
+    _id: "673637b66f6515f00b51fb7a",
     name: "Royal Palm — Orchid Country Club",
     img: [
       "https://cdn.eatigo.com/restaurant-image/5005282_426bc601-9aa7-421d-a52d-c5a5bc103503.jpeg",
@@ -343,6 +361,7 @@ module.exports = [
     website: "https://royalpalmocc.com.sg/",
   },
   {
+    _id: "673637b66f6515f00b51fb7b",
     name: "Kintamani Indonesian Restaurant — Furama Singapore",
     img: [
       "https://www.furama.com/images/kinta.jpg",
@@ -361,6 +380,7 @@ module.exports = [
       "https://www.furama.com/riverfront/dining/kintamani-indonesian-restaurant",
   },
   {
+    _id: "673637b66f6515f00b51fb7c",
     name: "Captain Kim Korean BBQ & Hotpot Buffet",
     img: [
       "https://kaizenaire.com/wp-content/uploads/2024/07/Get-20-OFF-on-Captain-Kims-Halal-Korean-BBQ-and-Hotpot-Buffet.jpg",
@@ -380,6 +400,7 @@ module.exports = [
     website: "	https://kingdomfood.sg/captain-kim-korean-bbq-hotpot/",
   },
   {
+    _id: "673637b66f6515f00b51fb7d",
     name: "Peppermint, PARKROYAL COLLECTION Marina Bay, Singapore",
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/08/maybankbuffet1.jpg",
@@ -398,6 +419,7 @@ module.exports = [
       "https://www.panpacific.com/en/hotels-and-resorts/pr-collection-marina-bay/dining/peppermint.html",
   },
   {
+    _id: "673637b66f6515f00b51fb7e",
     name: "Town Restaurant, The Fullerton Hotel Singapore",
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/09/maybankbuffet15.jpg",
@@ -418,6 +440,7 @@ module.exports = [
       "https://www.fullertonhotels.com/fullerton-hotel-singapore/dining/restaurants-and-bars/town-restaurant",
   },
   {
+    _id: "673637b66f6515f00b51fb7f",
     name: "CLOVE at Swissôtel The Stamford",
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/08/maybankbuffet7.jpg",
@@ -436,6 +459,7 @@ module.exports = [
       "https://www.swissotel-singapore-stamford.com/restaurants-bars/clove/",
   },
   {
+    _id: "673637b66f6515f00b51fb80",
     name: "J65, JEN Singapore Tanglin by Shangri-La",
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/08/maybankbuffet4.jpg",
