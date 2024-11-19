@@ -37,6 +37,10 @@ const restaurantSchema = new mongoose.Schema(
     website: {
       type: String,
     },
+    location: {
+      type: { type: String, enum: ["Point"], required: true },
+      coordinates: { type: [Number], required: true },
+    },
   },
   {
     toJSON: { virtuals: true },
@@ -63,5 +67,7 @@ restaurantSchema.virtual("averageRating").get(function () {
   }
   return 0;
 });
+
+restaurantSchema.index({ location: "2dsphere" });
 
 module.exports = mongoose.model("Restaurant", restaurantSchema);
