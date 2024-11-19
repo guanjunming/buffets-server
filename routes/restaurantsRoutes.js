@@ -18,5 +18,6 @@ router.get(
   checkErrors,
   restaurantsController.getRestaurantById
 );
+router.post("/nearest", restaurantsController.getRestaurantsByNearest);
 
 module.exports = router;
