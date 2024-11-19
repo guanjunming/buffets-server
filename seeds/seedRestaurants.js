@@ -75,7 +75,7 @@ module.exports = [
     name: "Carousel - Royal Plaza on Scotts",
     img: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/88/04/69/fresh-seafood-selection.jpg?w=1100&h=-1&s=1",
-      "https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-6/465023913_10152018793669955_5016315905878492461_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9Dz2UhmA0UMQ7kNvgGKriAF&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AxnM5LCeeoRuz3JJ4ADLSfZ&oh=00_AYDs3dVP8PHrDkklcm-hdydgJMnSH2hJWHWIqwqyVPXBtQ&oe=673BC1E0",
+      "https://media-cdn.tripadvisor.com/media/photo-s/16/88/05/34/pumpkin-tart-garden-desserts.jpg",
       "https://carouselbuffet.com.sg/wp-content/uploads/sites/172/2021/03/Untitled-design-39.png",
       "https://media-cdn.tripadvisor.com/media/photo-s/15/a2/e5/2c/churrasco-carousel-royal.jpg",
       "https://asiacuisine.com/files/news/800x600/1616147575.46017_800x600.jpg",
@@ -244,7 +244,7 @@ module.exports = [
     img: [
       "https://qul.imgix.net/acee6253-a5e2-44fa-95f3-e26f43d5030a/627247_sld.jpg?auto=format&w=1024",
       "https://qul.imgix.net/fbf776b4-6a5f-40b0-af52-a2c979dc56ab/401018_sld.jpg?auto=format&w=1024",
-      "https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-6/298318338_438243524991160_9118136323019271968_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=hHEITKPrNjEQ7kNvgGdWi6a&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AdQnNZ0cIiLJyCPp333jTq_&oh=00_AYCjpiSN1InR_H997Q_NwMnzwrmlpCGcVzj54DUuZsujEw&oe=673BCD6F",
+      "https://islifearecipe.net/mall-restaurant-directory/wp-content/uploads/2022/06/ddb_1024x682_1.png",
       "https://scontent.fsin14-1.fna.fbcdn.net/v/t1.6435-9/39086597_1823865314356287_3782926217003401216_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Xtz1xa0NJAwQ7kNvgEUdK4w&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AXMItK6eQPaKP7RRfbS1Tne&oh=00_AYDNTPMzib0z6tbkCbZ5BAqBIZNcmQDVgssYwCySEGpIng&oe=675D76D4",
       "https://scontent.fsin14-2.fna.fbcdn.net/v/t39.30808-6/464277282_8467904196618999_777477988366249377_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=91q4CBY33dAQ7kNvgEmiFgn&_nc_zt=23&_nc_ht=scontent.fsin14-2.fna&_nc_gid=AFFE9RUy17zPWJKZJGRp5E6&oh=00_AYBIa-kaQFizk7dx190YOW0L_OWdDMYpx48j6J2cL0Fq-Q&oe=673BF93C",
     ],
@@ -437,9 +437,9 @@ module.exports = [
     name: "Kintamani Indonesian Restaurant — Furama Singapore",
     img: [
       "https://www.furama.com/images/kinta.jpg",
-      "https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-6/295554551_571180514550574_5265671046399400809_n.jpg?stp=dst-jpg_s960x960&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=zG2YqOyr3eEQ7kNvgG3_hiD&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AEQOSEELcIQeHggQwhQZTu5&oh=00_AYBkkZOW0jhuigNvl8Ni7cjyWXd4qTA74Eclc-O7-DaFpQ&oe=673BE314",
       "https://www.furama.com/images/kinta_buffet_thumb.jpg",
       "https://www.furama.com/images/current-promotions-2.jpg",
+      "https://cdn.myfunnow.com/imgs/branch/cover/Shopify%20Banner%20Mobile_1ec43e.png",
     ],
     address:
       "405 Havelock Rd, Level 2 Square, Furama Riverfront, Singapore 169633",
@@ -507,7 +507,7 @@ module.exports = [
     name: "Town Restaurant, The Fullerton Hotel Singapore",
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/09/maybankbuffet15.jpg",
-      "https://scontent.fsin14-2.fna.fbcdn.net/v/t39.30808-6/330368026_776157933528090_2364371656840542277_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=77CMSGfKDbQQ7kNvgF_tUUS&_nc_zt=23&_nc_ht=scontent.fsin14-2.fna&_nc_gid=Apzj-_hPX6nJLvIoDXXCkv6&oh=00_AYCAvb4A-yaRW3uQH5mgo1XSX8X5LATHw7JTBtXROvJtoQ&oe=673BEE44",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/be/46/10.jpg",
       "https://qul.imgix.net/9e02bfba-994b-475c-af25-2209e81efed6/714401_sld.jpg?auto=format&w=954",
       "https://qul.imgix.net/9e02bfba-994b-475c-af25-2209e81efed6/714402_sld.jpg?auto=format&w=954",
       "https://qul.imgix.net/9e02bfba-994b-475c-af25-2209e81efed6/714404_sld.jpg?auto=format&w=954",
@@ -556,7 +556,7 @@ module.exports = [
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/08/maybankbuffet4.jpg",
       "https://cdn.eatigo.com/restaurant-image/5011965_ce6a624a-57bd-46ee-a920-345ce91cc52e.jpeg",
-      "https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-6/278532805_10166012380155005_3490402367889744432_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=3mY_MDFM0_4Q7kNvgGaFgju&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AGMo8O9yJiVJn9ahgODV16-&oh=00_AYDoz6YX09b7VT91-IfoTYJ7rzNb2fkCLHki1lWbwvxpFg&oe=673BD826",
+      "https://www.foodgem.sg/wp-content/uploads/2018/09/DSC03788ok.jpg",
       "https://eatbook.sg/wp-content/uploads/2023/12/JEN-Singapore-Tanglin-J65-ambience-2.jpg",
       "https://eatbook.sg/wp-content/uploads/2023/12/JEN-Singapore-Tanglin-J65-chocolate-fountain.jpg",
     ],
