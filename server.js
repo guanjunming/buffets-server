@@ -8,6 +8,7 @@ const CustomError = require("./utils/customError");
 const restaurantsRoutes = require("./routes/restaurantsRoutes");
 const userRoutes = require("./routes/userRoutes");
 const reviewRoutes = require("./routes/reviewRoutes");
+const favouriteRoutes = require("./routes/favouriteRoutes");
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -29,6 +30,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/restaurants", restaurantsRoutes);
 app.use("/api/reviews", reviewRoutes);
 app.use("/api", userRoutes);
+app.use("/api/favourites", favouriteRoutes);
 
 // route not found
 app.use((req, res, next) => {
