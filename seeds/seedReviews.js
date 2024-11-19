@@ -4,7 +4,7 @@ module.exports = [
     review:
       "Awesome Food and great service. Enjoyed the 1 for 1 promotion too!",
     rating: 5,
-    user: "673c0b58fe4f013c2b82726b",
+    user: "673c0b58fe4f013c2b827271",
     restaurant: "673637b66f6515f00b51fb69",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
@@ -22,17 +22,17 @@ module.exports = [
     review:
       "Impress by the service of the staff. Would come back again as the food is so good too!",
     rating: 5,
-    user: "673c0b58fe4f013c2b82726b",
+    user: "673c0b58fe4f013c2b827272",
     restaurant: "673637b66f6515f00b51fb6b",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {
     title: "Love the food",
     review:
-      "The food is so good! Could stop helping myself to the buffet spread!",
+      "The food is so good! Couldn't stop helping myself to the buffet spread!",
     rating: 4,
     user: "673c0b58fe4f013c2b82726b",
-    restaurant: "673637b66f6515f00b51fb6c",
+    restaurant: "673637b66f6515f00b51fb80",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {
@@ -40,16 +40,16 @@ module.exports = [
     review:
       "Awesome Food and great service. But to me it was very pricey. More suitable for special occasions.",
     rating: 3,
-    user: "673c0b58fe4f013c2b82726b",
+    user: "673c0b58fe4f013c2b827273",
     restaurant: "673637b66f6515f00b51fb6d",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {
-    title: "Delicious",
+    title: "Wow!",
     review:
-      "Simply delicious! Will definetly come back with my family again! Come and try it for yourselves!",
+      "Everything is delcious here! Would like to recommend this buffet to everyone!!",
     rating: 5,
-    user: "673c0b58fe4f013c2b82726b",
+    user: "673c0b58fe4f013c2b82726d",
     restaurant: "673637b66f6515f00b51fb69",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
@@ -85,7 +85,7 @@ module.exports = [
     review:
       "Wow the promo was so good! We had 50% off during the lunch special! Would recommend this restaurant to our friends!",
     rating: 4,
-    user: "673c0b58fe4f013c2b82726b",
+    user: "673c0b58fe4f013c2b82726d",
     restaurant: "673637b66f6515f00b51fb6f",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
@@ -121,7 +121,7 @@ module.exports = [
     review:
       "Awesome Food and great service. Love the desserts too. Would come back again! ",
     rating: 5,
-    user: "673c0b58fe4f013c2b82726b",
+    user: "673c0b58fe4f013c2b827275",
     restaurant: "673637b66f6515f00b51fb73",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
@@ -130,7 +130,7 @@ module.exports = [
     review:
       "There was 1 for 1 promotion and we get to eat till our tummy's content. So great!",
     rating: 5,
-    user: "673c0b58fe4f013c2b82726b",
+    user: "673c0b58fe4f013c2b827274",
     restaurant: "673637b66f6515f00b51fb73",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
@@ -164,16 +164,16 @@ module.exports = [
   {
     title: "Love the food",
     review:
-      "The food is so good! Could stop helping myself to the buffet spread!",
+      "Could not stop helping myself to the buffet spread! The food is amazing!",
     rating: 4,
     user: "673c0b58fe4f013c2b82726c",
     restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-15T14:05:38.833+00:00",
   },
   {
-    title: "Juicy steak",
+    title: "Juicy seafood",
     review:
-      "The restaurant offers a wide variety of dishes to choose from, and everything we tried was delicious. The highlight for me was the grilled steak - juicy, tender, and seasoned to perfection. Will definitely visit again.",
+      "The restaurant offers a wide variety of dishes to choose from, and everything we tried was delicious. The highlight for me was the grilled lobsters - juicy, tender, and seasoned to perfection. Will definitely visit again.",
     rating: 3,
     user: "673c0b58fe4f013c2b82726c",
     restaurant: "673637b66f6515f00b51fb6d",
@@ -184,7 +184,7 @@ module.exports = [
     review:
       "Simply delicious! Will definetly come back with my family again! Come and try it for yourselves!",
     rating: 5,
-    user: "673c0b58fe4f013c2b82726c",
+    user: "673c0b58fe4f013c2b827273",
     restaurant: "673637b66f6515f00b51fb69",
     createdAt: "2024-11-17T14:05:38.833+00:00",
   },
@@ -193,16 +193,16 @@ module.exports = [
     review:
       "Amazing flavors and incredible presentation! The seafood platter was fresh and cooked to perfection, and the desserts were a heavenly treat. A must-visit for anyone looking for quality dining.",
     rating: 4,
-    user: "673c0b58fe4f013c2b82726c",
+    user: "673c0b58fe4f013c2b82726f",
     restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-15T14:05:38.833+00:00",
   },
   {
-    title: "Yummy",
+    title: "So much seafood!",
     review:
-      "We had a family gathering and enjoyed our dinner here, Everyone was complementing how good the food was. ",
+      "Free flow seafood! This is a heaven to me! Love the chili crabs so much we had 5 servings of them!! ",
     rating: 5,
-    user: "673c0b58fe4f013c2b82726c",
+    user: "673c0b58fe4f013c2b82726e",
     restaurant: "673637b66f6515f00b51fb6d",
     createdAt: "2024-11-14T14:05:38.833+00:00",
   },
@@ -216,9 +216,9 @@ module.exports = [
     createdAt: "2024-11-18T14:05:38.833+00:00",
   },
   {
-    title: "Good promo",
+    title: "Value for money",
     review:
-      "Wow the promo was so good! We had 50% off during the lunch special! Would recommend this restaurant to our friends!",
+      "We were lucky to find the 1 for 1 promotion for a limited time and it was a steal!! We ate to out hearts content!",
     rating: 4,
     user: "673c0b58fe4f013c2b82726c",
     restaurant: "673637b66f6515f00b51fb6f",
@@ -256,7 +256,7 @@ module.exports = [
     review:
       "Awesome Food and great service. Love the desserts too. Would come back again! ",
     rating: 5,
-    user: "673c0b58fe4f013c2b82726c",
+    user: "673c0b58fe4f013c2b827273",
     restaurant: "673637b66f6515f00b51fb73",
     createdAt: "2024-11-15T14:05:38.833+00:00",
   },
@@ -265,7 +265,7 @@ module.exports = [
     review:
       "Delicious meals at a reasonable price. The pizza had the perfect crust and was loaded with toppings. The Caesar salad was fresh and crispy. A great spot for a casual dinner.",
     rating: 4,
-    user: "673c0b58fe4f013c2b82726c",
+    user: "673c0b58fe4f013c2b827272",
     restaurant: "673637b66f6515f00b51fb73",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
@@ -283,7 +283,7 @@ module.exports = [
     review:
       "Fantastic food and great service! The sushi rolls were fresh and expertly made. The miso soup and tempura were equally delightful. Looking forward to coming back soon.",
     rating: 4,
-    user: "673c0b58fe4f013c2b82726c",
+    user: "673c0b58fe4f013c2b82726e",
     restaurant: "673637b66f6515f00b51fb73",
     createdAt: "2024-11-19T14:05:38.833+00:00",
   },
@@ -342,9 +342,9 @@ module.exports = [
     createdAt: "2024-11-17T14:05:38.833+00:00",
   },
   {
-    title: "Recommend the cheesecake here!",
+    title: "Recommend the korean army stew and grilled beef!",
     review:
-      "This buffet exceeded my expectations. The Asian section was phenomenal, with stir-fried noodles and dumplings that tasted amazing. The roast section had succulent meats, and the variety of breads paired perfectly with the soups. Dessert was a highlight with creamy cheesecakes and fresh fruit tarts.",
+      "This buffet exceeded my expectations. The Korean selections was phenomenal, with stir-fried chapchae and dumplings that tasted amazing. The bbq section had succulent pork and beef, and the variety of meat paired perfectly with the soups. Dessert was a highlight with creamy cheesecakes and fresh fruit tarts.",
     rating: 5,
     user: "673c0b58fe4f013c2b82726c",
     restaurant: "673637b66f6515f00b51fb7c",
@@ -519,6 +519,15 @@ module.exports = [
     rating: 5,
     user: "673c0b58fe4f013c2b827275",
     restaurant: "673637b66f6515f00b51fb74",
+    createdAt: "2024-11-16T14:05:38.833+00:00",
+  },
+  {
+    title: "Expecting more dessert items.",
+    review:
+      "Varierty of local food was a lot, but there were minial desserts. Would expect more choices for desserts.",
+    rating: 3,
+    user: "673c0b58fe4f013c2b827270",
+    restaurant: "673637b66f6515f00b51fb7a",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
 ];
