@@ -14,6 +14,8 @@ const checkAuth = require("../middleware/checkAuth");
 
 const router = express.Router();
 
+router.get("/seed", userController.seedUsersData);
+
 router.post(
   "/signup",
   validateSignupData,
