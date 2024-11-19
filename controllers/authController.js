@@ -85,4 +85,51 @@ const refresh = (req, res, next) => {
   }
 };
 
-module.exports = { signup, login, refresh };
+const updatePassword = async (req, res, next) => {
+  try {
+    const { passwordCurrent, passwordNew } = req.body;
+
+    const user = await User.findById(req.user.id);
+    if (!user) {
+      return next(new CustomError("No user found with provided id.", 404));
+    }
+
+    const isSamePassword = await bcrypt.compare(passwordCurrent, user.password);
+    if (!isSamePassword) {
+      return next(new CustomError("Current password is incorrect.", 403));
+    }
+
+    const hashedPassword = await bcrypt.hash(passwordNew, 12);
+    user.password = hashedPassword;
+    await user.save();
+
+    sendAccessToken(user, 200, res);
+  } catch (error) {
+    next(new CustomError("Failed to update password.", 500));
+  }
+};
+
+const updateProfile = async (req, res, next) => {
+  try {
+    const updatedUser = await User.findByIdAndUpdate(
+      req.user.id,
+      {
+        name: req.body.name,
+      },
+      { new: true }
+    );
+
+    if (!updatedUser) {
+      return next(new CustomError("No user found with provided id.", 404));
+    }
+
+    res.json({
+      message: "success",
+      data: { name: updatedUser.name },
+    });
+  } catch (error) {
+    next(new CustomError("Failed to update profile.", 500));
+  }
+};
+
+module.exports = { signup, login, refresh, updatePassword, updateProfile };
