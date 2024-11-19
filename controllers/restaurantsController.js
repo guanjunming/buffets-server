@@ -123,10 +123,57 @@ const getRestaurantsByQuery = async (req, res, next) => {
   }
 };
 
+const getRestaurantsByNearest = async (req, res, next) => {
+  const { longitude, latitude } = req.body;
+
+  try {
+    const restaurants = await Restaurant.aggregate([
+      {
+        $geoNear: {
+          near: { type: "Point", coordinates: [longitude, latitude] },
+          distanceField: "distance", // distance in meters
+          spherical: true,
+        },
+      },
+      {
+        $lookup: {
+          from: "reviews",
+          localField: "_id",
+          foreignField: "restaurant",
+          as: "reviews",
+        },
+      },
+      {
+        $addFields: {
+          reviewCount: { $size: "$reviews" },
+          averageRating: {
+            $cond: {
+              if: { $gt: [{ $size: "$reviews" }, 0] },
+              then: {
+                $round: [{ $avg: "$reviews.rating" }, 1],
+              },
+              else: 0,
+            },
+          },
+        },
+      },
+
+      {
+        $project: { reviews: 0 }, // exclude reviews
+      },
+    ]);
+
+    res.json(restaurants);
+  } catch (error) {
+    return next(new CustomError("Failed to fetch nearest restaurants", 500));
+  }
+};
+
 module.exports = {
   seedRestaurantsData,
   getRestaurants,
   getRestaurantById,
   getRestaurantsMaxPriceCuisines,
   getRestaurantsByQuery,
+  getRestaurantsByNearest,
 };

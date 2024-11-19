@@ -1,6 +1,7 @@
 const User = require("../models/User");
 const Review = require("../models/Review");
 const CustomError = require("../utils/customError");
+const seedUsers = require("../seeds/seedUsers");
 
 const getUserProfile = async (req, res, next) => {
   try {
@@ -60,4 +61,14 @@ const getUserProfile = async (req, res, next) => {
   }
 };
 
-module.exports = { getUserProfile };
+const seedUsersData = async (req, res, next) => {
+  try {
+    await User.deleteMany({});
+    await User.insertMany(seedUsers);
+    res.json({ status: "success", message: "Seeding successful" });
+  } catch (error) {
+    return next(new CustomError("Seeding failed", 500));
+  }
+};
+
+module.exports = { getUserProfile, seedUsersData };

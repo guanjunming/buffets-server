@@ -19,6 +19,10 @@ module.exports = [
     cuisine: ["International", "Local"],
     website:
       "https://singaporeatrium.holidayinn.com/atrium-restaurant-buffet-details",
+    location: {
+      type: "Point",
+      coordinates: [103.83423849532792, 1.289173317419302],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb6a",
@@ -38,6 +42,10 @@ module.exports = [
       "Savour an enticing menu highlighted by speciality Nonya dishes such as Babi Pongteh, Itik Siok, Sambal Udang and enticing arrays of desserts and nonya kueh kueh. On top of Peranakan cuisine, selections of local and western a-la-carte specialty like Hainanese Chicken Rice, Laksa, pastas, and steaks are also available upon request.",
     cuisine: ["Peranakan", "Local"],
     website: "	https://www.hotelgrandpacific.com.sg/promotions/peranakan-buffet",
+    location: {
+      type: "Point",
+      coordinates: [103.85269270696938, 1.2975716160505892],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb6b",
@@ -57,13 +65,17 @@ module.exports = [
     cuisine: ["Local"],
     website:
       "https://www.millenniumhotels.com/en/offers/asia/orchard-hotel-singapore/dining/orchard-cafe/heritage-buffet/ ",
+    location: {
+      type: "Point",
+      coordinates: [103.82861548402046, 1.307578919245655],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb6c",
     name: "Carousel - Royal Plaza on Scotts",
     img: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/88/04/69/fresh-seafood-selection.jpg?w=1100&h=-1&s=1",
-      "https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-6/465023913_10152018793669955_5016315905878492461_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9Dz2UhmA0UMQ7kNvgGKriAF&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AxnM5LCeeoRuz3JJ4ADLSfZ&oh=00_AYDs3dVP8PHrDkklcm-hdydgJMnSH2hJWHWIqwqyVPXBtQ&oe=673BC1E0",
+      "https://media-cdn.tripadvisor.com/media/photo-s/16/88/05/34/pumpkin-tart-garden-desserts.jpg",
       "https://carouselbuffet.com.sg/wp-content/uploads/sites/172/2021/03/Untitled-design-39.png",
       "https://media-cdn.tripadvisor.com/media/photo-s/15/a2/e5/2c/churrasco-carousel-royal.jpg",
       "https://asiacuisine.com/files/news/800x600/1616147575.46017_800x600.jpg",
@@ -77,6 +89,10 @@ module.exports = [
       "Carousel serves an international spread for its a la carte lunch and dinner buffets, but doesn’t skimp on premium seafood. This makes it a great choice for both seafood lovers and gourmands alike. The restaurant’s signature Lobsters & Crabs Buffet, which comes with an endless flow of lobster, scallops, tiger prawns, mussels and clams, is worth the visit from 8 May to 5 June 2024.",
     cuisine: ["International"],
     website: "http://carouselbuffet.com.sg/",
+    location: {
+      type: "Point",
+      coordinates: [103.83195696196229, 1.3070874862552635],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb6d",
@@ -97,6 +113,10 @@ module.exports = [
       "Treat yourself to a seafood buffet at Tung Lok Seafood, one of the best Chinese restaurants in Singapore specialising in local-style seafood. Seafood highlights include a seafood platter (Alaskan crab leg, live prawns, live scallops and salad with black fish roe), raw oyster, chilli crab, black pepper crab, shark’s fin soup and more; as well as other options ranging from fresh sashimi to octopus and jellyfish. ",
     cuisine: ["Local", "Chinese"],
     website: "https://www.tunglok.com/en/tunglok-seafood",
+    location: {
+      type: "Point",
+      coordinates: [103.68221336649209, 1.3297255175996654],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb6e",
@@ -117,6 +137,10 @@ module.exports = [
       "One of the oldest Japanese a la carte buffets in Singapore, Shin Minori is located at UE Square. Their buffet menu features over 160 dishes that include sashimi, sushi of all types, teppanyaki, yakimono, tempura, ramen and more. With so many food options, this is definitely the place to go if you have picky eaters in your group or can’t quite decide where to bring the family.  ",
     cuisine: ["Japanese"],
     website: "http://butterflyportals.com:8890/phone/shinminori01ue/#/",
+    location: {
+      type: "Point",
+      coordinates: [103.84275269532787, 1.2922165208511132],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb6f",
@@ -137,6 +161,10 @@ module.exports = [
       "There are two types of buffet at Tenkaichi – deluxe and premium. The deluxe menu features a wide range of sashimi, wagyu beef and black pork, while the premium menu offers jumbo oysters, giant scallops, white tuna on top of wagyu beef and sashimi.",
     cuisine: ["Japanese", "BBQ"],
     website: "www.tenkaichi.com.sg",
+    location: {
+      type: "Point",
+      coordinates: [103.85767287601462, 1.291392205361995],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb70",
@@ -157,6 +185,10 @@ module.exports = [
       "Thick cuts of fresh sashimi, sizzling sticks of yakimono, comforting seafood miso soup and jiggly chawanmushi topped with ikura are just some of the dishes you will find on Mitsuba’s extensive a la carte Japanese buffet menu.",
     cuisine: ["Japanese"],
     website: "https://www.mitsuba.com.sg/",
+    location: {
+      type: "Point",
+      coordinates: [103.84660605053634, 1.28905719043217],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb71",
@@ -177,6 +209,10 @@ module.exports = [
       "At this massive Japanese buffet spanning over three units at Orchard Central, Kiseki gets you all the Japanese fare your heart and stomach desires. In addition to fresh sashimi, seafood and teppanyaki, you can also indulge in delectable desserts such as ice cream waffles, pudding and cake! ",
     cuisine: ["Japanese", "BBQ"],
     website: "https://www.kisekirestaurant.com.sg/",
+    location: {
+      type: "Point",
+      coordinates: [103.83953461067128, 1.3011096940180018],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb72",
@@ -197,6 +233,10 @@ module.exports = [
       "With food prepared by experienced chefs and the freshest ingredients from Australia, New Zealand, Norway and Europe, you will be transported to Japan as you feast. Do try their signature green tea tofu and ebi mentai mayo when you’re there!",
     cuisine: ["Japanese"],
     website: "http://irodorirestaurant.com.sg/",
+    location: {
+      type: "Point",
+      coordinates: [103.8366478953279, 1.2894209733299133],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb73",
@@ -204,7 +244,7 @@ module.exports = [
     img: [
       "https://qul.imgix.net/acee6253-a5e2-44fa-95f3-e26f43d5030a/627247_sld.jpg?auto=format&w=1024",
       "https://qul.imgix.net/fbf776b4-6a5f-40b0-af52-a2c979dc56ab/401018_sld.jpg?auto=format&w=1024",
-      "https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-6/298318338_438243524991160_9118136323019271968_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=hHEITKPrNjEQ7kNvgGdWi6a&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AdQnNZ0cIiLJyCPp333jTq_&oh=00_AYCjpiSN1InR_H997Q_NwMnzwrmlpCGcVzj54DUuZsujEw&oe=673BCD6F",
+      "https://islifearecipe.net/mall-restaurant-directory/wp-content/uploads/2022/06/ddb_1024x682_1.png",
       "https://scontent.fsin14-1.fna.fbcdn.net/v/t1.6435-9/39086597_1823865314356287_3782926217003401216_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Xtz1xa0NJAwQ7kNvgEUdK4w&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AXMItK6eQPaKP7RRfbS1Tne&oh=00_AYDNTPMzib0z6tbkCbZ5BAqBIZNcmQDVgssYwCySEGpIng&oe=675D76D4",
       "https://scontent.fsin14-2.fna.fbcdn.net/v/t39.30808-6/464277282_8467904196618999_777477988366249377_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=91q4CBY33dAQ7kNvgEmiFgn&_nc_zt=23&_nc_ht=scontent.fsin14-2.fna&_nc_gid=AFFE9RUy17zPWJKZJGRp5E6&oh=00_AYBIa-kaQFizk7dx190YOW0L_OWdDMYpx48j6J2cL0Fq-Q&oe=673BF93C",
     ],
@@ -216,6 +256,10 @@ module.exports = [
       "Gather your friends and put on your stretchy pants because you’d need some breathing room for the gloriously thick (almost an inch) cuts of pork belly cooked over a charcoal flame. The owners of Don Dae Bak strongly believe that charcoal cooked meat is the only way to go, and we can’t agree more. If you’ve had enough of porky goodness (or don’t take pork), Don Dae Bak also offers marinated cuts of chicken and beef. All of the above are served with a selection of fresh banchans (Korean appetizers) made by the ajumma (a respectful Korean word for a married, or marriage aged woman) herself, fresh vegetables and a portion of fluffy steamed egg.",
     cuisine: ["Korean", "BBQ"],
     website: "https://don-dae-bak.com/",
+    location: {
+      type: "Point",
+      coordinates: [103.84225040594387, 1.2809228825769312],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb74",
@@ -235,6 +279,10 @@ module.exports = [
       "Owned and managed by an adorable Korean couple, this is as close to authentic Korean food as you can get in Singapore. Their Korean BBQ buffet includes unlimited servings of pork belly, marinated pork, beef brisket and marinated chicken. On top of this, you have the option to order a portion of fried chicken, a stew (jjigae) and Korean pancake (pajeon) of your choosing. Do leave some space for the amazing Banchan spread that’s included in the buffet. From kimchi to salty anchovies and marinated eggplant, all of them are made fresh by the always-slightly-grumpy ajumma, so be sure not to waste them.",
     cuisine: ["Korean", "BBQ"],
     website: "https://www.chogakoreanrestaurant.com/",
+    location: {
+      type: "Point",
+      coordinates: [103.76451225114869, 1.3636155919784103],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb75",
@@ -256,6 +304,10 @@ module.exports = [
       "K.COOK Korean BBQ Buffet is the only Korean BBQ buffet situated on the main stretch of Orchard Road. You can expect a good mix of BBQ meats, seafood and appetisers, along with a selection of cooked Korean food, fresh cut fruits and a pretty elaborate sauce section (15+ sauces available). Note that there is a two-hour time limit for this buffet.",
     cuisine: ["Korean", "BBQ"],
     website: "https://www.facebook.com/kcooksg/",
+    location: {
+      type: "Point",
+      coordinates: [103.83921499532792, 1.3012192461492145],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb76",
@@ -275,6 +327,10 @@ module.exports = [
       "Cheese Story Mookata is our ultimate choice if you have cheese cravings to go along with your meal. You’ll get unlimited access to salmon, crayfish, oysters, tiger prawns, scallops, mussels, clams, flower crabs, fish, squid, a range of marinated meat, vegetables, instant noodles and more. Best of all, this mookata buffet also includes free-flow drinks and desserts like Thai milk tea and ice cream to finish off your meal. ",
     cuisine: ["Thai", "BBQ"],
     website: "https://www.facebook.com/CheeseStoryMookata",
+    location: {
+      type: "Point",
+      coordinates: [103.84865783091001, 1.3290753581552657],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb77",
@@ -295,6 +351,10 @@ module.exports = [
       "Located in Orchard Central, you will find The Armoury Craft Beer Bar. If you choose to dine here, do come ready to eat because their buffet menu is pretty extensive. You’ll get 90 minutes to gorge on unlimited servings of striploin, ribeye, bbq pork ribs, baked dory, chicken thigh, mantou, nacho chips, chicken drumlets, chicken satay and a whole lot more. ",
     cuisine: ["Western"],
     website: "https://www.armourysteaks.com/",
+    location: {
+      type: "Point",
+      coordinates: [103.83977996464111, 1.3008601722533193],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb78",
@@ -315,6 +375,10 @@ module.exports = [
       "Get ready to eat your weight in grilled meat at Carnivore Brazilian Churrascaria, which offers 15 different types of grilled beef, lamb, pork, chicken and fish. Take your pick from the extensive menu, and watch as waiters come around to your table with large skewers of flame-grilled meats and slice them directly on your plate. To cleanse your palate after all that meat, is a selection of hot and cold salads, rice, breads and fresh fruits.",
     cuisine: ["Brazilian", "BBQ"],
     website: "https://www.carnivore.com.sg/",
+    location: {
+      type: "Point",
+      coordinates: [103.84142732416373, 1.2916333297879392],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb79",
@@ -334,6 +398,10 @@ module.exports = [
       "The halal-certified Asian Market Café is the perfect place for seafood lovers. Head here if you want to indulge in a halal seafood buffet that includes oysters, delicious chilli crabs, crayfish, mussels, prawns, and much more. In addition to the seafood, enjoy Japanese sushi, mouth-watering roasted duck, satay stations, and mutton rendang, among others. Enjoy tantalising hot and cold desserts. Get a taste of local sweets, along with such delights as durian pudding and Portuguese egg tarts. Wash down the delicious buffet with the accompanying teh tarik (milk tea).",
     cuisine: ["Halal", "International"],
     website: "https://www.fairmont-singapore.com/dining/asian-market-cafe/",
+    location: {
+      type: "Point",
+      coordinates: [103.85376189532782, 1.2944355162662629],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb7a",
@@ -359,15 +427,19 @@ module.exports = [
       "Mediterranean",
     ],
     website: "https://royalpalmocc.com.sg/",
+    location: {
+      type: "Point",
+      coordinates: [103.84431959532809, 1.411232161382655],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb7b",
     name: "Kintamani Indonesian Restaurant — Furama Singapore",
     img: [
       "https://www.furama.com/images/kinta.jpg",
-      "https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-6/295554551_571180514550574_5265671046399400809_n.jpg?stp=dst-jpg_s960x960&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=zG2YqOyr3eEQ7kNvgG3_hiD&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AEQOSEELcIQeHggQwhQZTu5&oh=00_AYBkkZOW0jhuigNvl8Ni7cjyWXd4qTA74Eclc-O7-DaFpQ&oe=673BE314",
       "https://www.furama.com/images/kinta_buffet_thumb.jpg",
       "https://www.furama.com/images/current-promotions-2.jpg",
+      "https://cdn.myfunnow.com/imgs/branch/cover/Shopify%20Banner%20Mobile_1ec43e.png",
     ],
     address:
       "405 Havelock Rd, Level 2 Square, Furama Riverfront, Singapore 169633",
@@ -378,6 +450,10 @@ module.exports = [
     cuisine: ["Halal", "Indonesian"],
     website:
       "https://www.furama.com/riverfront/dining/kintamani-indonesian-restaurant",
+    location: {
+      type: "Point",
+      coordinates: [103.83641946649193, 1.287720342853338],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb7c",
@@ -398,6 +474,10 @@ module.exports = [
       "This halal-certified restaurant offers savoury Korean dishes. With more than 60 items on its menu, Kim Captain restaurant provides a wide variety of Korean dishes. It provides fantastic options for people who want a taste of Korean BBQ and hotpot dishes.",
     cuisine: ["Korean", "BBQ"],
     website: "	https://kingdomfood.sg/captain-kim-korean-bbq-hotpot/",
+    location: {
+      type: "Point",
+      coordinates: [103.94204376634498, 1.3524128014200119],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb7d",
@@ -417,13 +497,17 @@ module.exports = [
     cuisine: ["Hong Kong", "International", "Japanese", "Halal"],
     website:
       "https://www.panpacific.com/en/hotels-and-resorts/pr-collection-marina-bay/dining/peppermint.html",
+    location: {
+      type: "Point",
+      coordinates: [103.85784641963389, 1.2920078086364923],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb7e",
     name: "Town Restaurant, The Fullerton Hotel Singapore",
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/09/maybankbuffet15.jpg",
-      "https://scontent.fsin14-2.fna.fbcdn.net/v/t39.30808-6/330368026_776157933528090_2364371656840542277_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=77CMSGfKDbQQ7kNvgF_tUUS&_nc_zt=23&_nc_ht=scontent.fsin14-2.fna&_nc_gid=Apzj-_hPX6nJLvIoDXXCkv6&oh=00_AYCAvb4A-yaRW3uQH5mgo1XSX8X5LATHw7JTBtXROvJtoQ&oe=673BEE44",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/be/46/10.jpg",
       "https://qul.imgix.net/9e02bfba-994b-475c-af25-2209e81efed6/714401_sld.jpg?auto=format&w=954",
       "https://qul.imgix.net/9e02bfba-994b-475c-af25-2209e81efed6/714402_sld.jpg?auto=format&w=954",
       "https://qul.imgix.net/9e02bfba-994b-475c-af25-2209e81efed6/714404_sld.jpg?auto=format&w=954",
@@ -438,6 +522,10 @@ module.exports = [
     cuisine: ["Asian", "Local"],
     website:
       "https://www.fullertonhotels.com/fullerton-hotel-singapore/dining/restaurants-and-bars/town-restaurant",
+    location: {
+      type: "Point",
+      coordinates: [103.85300957998452, 1.286442421343471],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb7f",
@@ -457,6 +545,10 @@ module.exports = [
     cuisine: ["International"],
     website:
       "https://www.swissotel-singapore-stamford.com/restaurants-bars/clove/",
+    location: {
+      type: "Point",
+      coordinates: [103.85308535908166, 1.293445765835627],
+    },
   },
   {
     _id: "673637b66f6515f00b51fb80",
@@ -464,7 +556,7 @@ module.exports = [
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/08/maybankbuffet4.jpg",
       "https://cdn.eatigo.com/restaurant-image/5011965_ce6a624a-57bd-46ee-a920-345ce91cc52e.jpeg",
-      "https://scontent.fsin14-1.fna.fbcdn.net/v/t39.30808-6/278532805_10166012380155005_3490402367889744432_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=3mY_MDFM0_4Q7kNvgGaFgju&_nc_zt=23&_nc_ht=scontent.fsin14-1.fna&_nc_gid=AGMo8O9yJiVJn9ahgODV16-&oh=00_AYDoz6YX09b7VT91-IfoTYJ7rzNb2fkCLHki1lWbwvxpFg&oe=673BD826",
+      "https://www.foodgem.sg/wp-content/uploads/2018/09/DSC03788ok.jpg",
       "https://eatbook.sg/wp-content/uploads/2023/12/JEN-Singapore-Tanglin-J65-ambience-2.jpg",
       "https://eatbook.sg/wp-content/uploads/2023/12/JEN-Singapore-Tanglin-J65-chocolate-fountain.jpg",
     ],
@@ -477,5 +569,9 @@ module.exports = [
     cuisine: ["Halal", "International", "Local"],
     website:
       "https://www.jen-eats.com/tanglin/web/restaurants-and-bars-SumptuousSeafoodFeastsAtJ65.aspx",
+    location: {
+      type: "Point",
+      coordinates: [103.82394013091003, 1.304435644100617],
+    },
   },
 ];

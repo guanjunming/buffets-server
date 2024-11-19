@@ -1,6 +1,17 @@
 const Restaurant = require("../models/Restaurant");
 const Review = require("../models/Review");
 const CustomError = require("../utils/customError");
+const seedReviews = require("../seeds/seedReviews");
+
+const seedReviewsData = async (req, res, next) => {
+  try {
+    await Review.deleteMany({});
+    await Review.insertMany(seedReviews);
+    res.json({ status: "success", message: "Seeding successful" });
+  } catch (error) {
+    return next(new CustomError("Seeding failed", 500));
+  }
+};
 
 const getReviewByRestaurantId = async (req, res, next) => {
   try {
@@ -108,47 +119,10 @@ const deleteReview = async (req, res, next) => {
   }
 };
 
-const seedReviews = async (req, res, next) => {
-  await Review.deleteMany({});
-
-  await Review.insertMany([
-    {
-      restaurant: "6734788f50c469dd17490a98",
-      user: "672dc8f739b455eaafe67263",
-      title: "Excellent Buffet",
-      review: "The food selection is amazing, and everything tasted great!",
-      rating: 5,
-    },
-    {
-      restaurant: "6734788f50c469dd17490a98",
-      user: "6735bf259f6de82081d8db7e",
-      title: "Good value for money",
-      review: "Great variety for the price. Will visit again!",
-      rating: 4,
-    },
-    {
-      restaurant: "6734788f50c469dd17490a99",
-      user: "6735bf259f6de82081d8db7e",
-      title: "Average Experience",
-      review: "The food was decent, but a bit overpriced in my opinion.",
-      rating: 3,
-    },
-    {
-      restaurant: "6734788f50c469dd17490a99",
-      user: "672dc8f739b455eaafe67263",
-      title: "Amazing ambiance",
-      review: "Loved the decor and the food selection was great!",
-      rating: 4,
-    },
-  ]);
-
-  res.json({ message: "Review seeded successfully." });
-};
-
 module.exports = {
   getReviewByRestaurantId,
   createorUpdateReview,
   updateReview,
   deleteReview,
-  seedReviews,
+  seedReviewsData,
 };
