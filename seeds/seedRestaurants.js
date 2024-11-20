@@ -110,7 +110,7 @@ module.exports = [
     adultPrice: { min: 43.8 },
     childPrice: { min: 33.8 },
     description:
-      "Treat yourself to a seafood buffet at Tung Lok Seafood, one of the best Chinese restaurants in Singapore specialising in local-style seafood. Seafood highlights include a seafood platter (Alaskan crab leg, live prawns, live scallops and salad with black fish roe), raw oyster, chilli crab, black pepper crab, shark’s fin soup and more; as well as other options ranging from fresh sashimi to octopus and jellyfish. ",
+      "Treat yourself to a seafood buffet at Tung Lok Seafood, one of the best Chinese restaurants in Singapore specialising in local-style seafood. Seafood highlights include a seafood platter (Alaskan crab leg, live prawns, live scallops and salad with black fish roe), raw oyster, chilli crab, black pepper crab, shark’s fin soup and more; as well as other options ranging from fresh sashimi to octopus and jellyfish.",
     cuisine: ["Local", "Chinese"],
     website: "https://www.tunglok.com/en/tunglok-seafood",
     location: {
@@ -130,7 +130,7 @@ module.exports = [
     ],
     address: "81 Clemenceau Ave, #03-15/16, Singapore 239917",
     openingHours:
-      "Lunch: 12pm to 2.30pm (last order 2.15pm), Afternoon High Tea: 3pm to 6pm (last order 5.15pm),Dinner: 6.15pm to 10.15pm (last order 9.45pm)",
+      "Lunch: 12pm to 2.30pm (last order 2.15pm)/ Afternoon High Tea: 3pm to 6pm (last order 5.15pm)/Dinner: 6.15pm to 10.15pm (last order 9.45pm)",
     adultPrice: { min: 36.9, max: 79.9 },
     childPrice: { min: 26.9, max: 61.9 },
     description:
@@ -263,7 +263,7 @@ module.exports = [
   },
   {
     _id: "673637b66f6515f00b51fb74",
-    name: "CHOGA Korean Restaurant ",
+    name: "CHOGA Korean Restaurant",
     img: [
       "https://www.kansascity.com/latest-news/1flv5g/picture280461254/alternates/FREE_1140/KCM_116_LetsDishChoga_10122",
       "https://s3-media0.fl.yelpcdn.com/bphoto/Ebv-MB8bRTNty1r5K8oj0g/o.jpg",
@@ -297,7 +297,7 @@ module.exports = [
     address:
       "Orchard Central #07-01: 181 Orchard Rd, Singapore 238896 / The Woodleigh Mall #02-49/50: 11 Bidadari Park Dr, Singapore 367803",
     openingHours:
-      "Lunch: Monday to Friday: 11.30am to 3pm, Saturday, Sunday & PH: 11.30am to 5pm/ Dinner: Monday to Thursday: 5.30pm to 10pm, Friday to Sunday, Eve & PH: 5pm to 10pm",
+      "Lunch: /Monday to Friday: 11.30am to 3pm /Saturday, Sunday & PH: 11.30am to 5pm/ Dinner: /Monday to Thursday: 5.30pm to 10pm/ Friday to Sunday, Eve & PH: 5pm to 10pm",
     adultPrice: { min: 56, max: 60 },
     childPrice: { min: 28, max: 30 },
     description:
@@ -311,7 +311,7 @@ module.exports = [
   },
   {
     _id: "673637b66f6515f00b51fb76",
-    name: "Cheese Story Mookata ",
+    name: "Cheese Story Mookata",
     img: [
       "https://singaporebeauty.com/wp-content/uploads/2024/06/cheese-story-mookata-buffet-location.jpg",
       "https://sethlui.com/wp-content/uploads/2017/01/Cheese-Story-Mookata-Buffet-3.jpg",
@@ -344,7 +344,7 @@ module.exports = [
     ],
     address: "181 Orchard Rd, #11-03/04 Orchard Central Singapore 238896",
     openingHours:
-      "Lunch: 11.30am to 2.30pm/ Dinner: 5pm to 9.30pm(till 6.45pm on weekends/ph) ",
+      "Lunch: 11.30am to 2.30pm/ Dinner: 5pm to 9.30pm(till 6.45pm on weekends) ",
     adultPrice: { min: 35 },
     childPrice: { min: 28 },
     description:
@@ -366,7 +366,7 @@ module.exports = [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/67/17/0c/al-fresco.jpg?w=1400&h=-1&s=1",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/ab/5c/1e/20191017-182259-largejpg.jpg?w=1400&h=-1&s=1",
     ],
-    address: "	30 Robertson Quay, Riverside View, #01-10/11, Singapore 238251",
+    address: "30 Robertson Quay, Riverside View, #01-10/11, Singapore 238251",
     openingHours:
       "Dinner: 6pm to11pm (last order 10.30pm)/ Brunch (Saturdays & Sundays only): 11am to 3pm (last order 2.30pm)",
     adultPrice: { min: 79 },
@@ -391,7 +391,7 @@ module.exports = [
       "https://halalmak.com/wp-content/uploads/2018/06/AsianMarket03.jpg",
     ],
     address: "Fairmont Singapore, 80 Bras Basah Rd, Level 2, Singapore 189560",
-    openingHours: "Lunch: 12pm to 2.30pm, Dinner: 6pm to 10pm",
+    openingHours: "Lunch: 12pm to 2.30pm/ Dinner: 6pm to 10pm",
     adultPrice: { min: 84, max: 98 },
     childPrice: { min: 42, max: 49 },
     description:
@@ -475,7 +475,7 @@ module.exports = [
     description:
       "This halal-certified restaurant offers savoury Korean dishes. With more than 60 items on its menu, Kim Captain restaurant provides a wide variety of Korean dishes. It provides fantastic options for people who want a taste of Korean BBQ and hotpot dishes.",
     cuisine: ["Korean", "BBQ"],
-    website: "	https://kingdomfood.sg/captain-kim-korean-bbq-hotpot/",
+    website: "https://kingdomfood.sg/captain-kim-korean-bbq-hotpot/",
     location: {
       type: "Point",
       coordinates: [103.94204376634498, 1.3524128014200119],
@@ -540,7 +540,7 @@ module.exports = [
       "https://accorahs-612068395.imgix.net/photos/a5d3_rsr018_01_p_2048x1536.jpg",
     ],
     address: "2 Stamford Road, Level 2, Singapore 178882",
-    openingHours: "Lunch: 12pm to 2:30pm, Dinner: 6pm to 10pm",
+    openingHours: "Lunch: 12pm to 2:30pm/ Dinner: 6pm to 10pm",
     adultPrice: { min: 68, max: 98 },
     description:
       "CLOVE at Swissôtel The Stamford offers a lively buffet dining experience, showcasing a wide array of global flavours that includes everything from fresh salads and seafood on ice to smoked fish and charcuterie.The live stations at CLOVE are particularly recommended, presenting carved roasts and à la minute dishes that are prepared right before your eyes, adding a sense of anticipation to the meal. On weekends, the buffet becomes even more enticing with the addition of a decadent chocolate station, making it an ideal choice for those seeking indulgent treats.",
@@ -563,7 +563,7 @@ module.exports = [
       "https://eatbook.sg/wp-content/uploads/2023/12/JEN-Singapore-Tanglin-J65-chocolate-fountain.jpg",
     ],
     address: "1a Cuscaden Road, Singapore 249716",
-    openingHours: "Lunch: 12.00pm to 2.30pm, Dinner: 6.00pm to 9.30pm ",
+    openingHours: "Lunch: 12.00pm to 2.30pm/ Dinner: 6.00pm to 9.30pm",
     adultPrice: { min: 59, max: 118 },
     childPrice: { min: 29.5, max: 59 },
     description:
