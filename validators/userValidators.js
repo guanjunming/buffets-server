@@ -2,6 +2,9 @@ const { body } = require("express-validator");
 
 const validateSignupData = [
   body("name", "Name is required.").trim().notEmpty(),
+  body("name", "Name must not exceed 40 characters.").isLength({
+    max: 40,
+  }),
   body("email", "Email address is required.").notEmpty(),
   body("email", "Email address is invalid.").isEmail(),
   body("password", "Password must be at least 8 characters.").isLength({
@@ -24,6 +27,9 @@ const validatePasswordData = [
 
 const validateProfileData = [
   body("name", "Name is required.").trim().notEmpty(),
+  body("name", "Name must not exceed 40 characters.").isLength({
+    max: 40,
+  }),
 ];
 
 module.exports = {

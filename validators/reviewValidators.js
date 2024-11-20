@@ -3,7 +3,7 @@ const { body } = require("express-validator");
 const validateReviewData = [
   body(
     "title",
-    "Title is required and must have a maximum of 120 characters."
+    "Title is required and must not exceed 120 characters."
   ).isLength({
     min: 1,
     max: 120,
