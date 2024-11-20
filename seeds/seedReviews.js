@@ -59,7 +59,7 @@ module.exports = [
       "Wow! The ambience is so amazing. Not to mention the food, which only made us craved for more.",
     rating: 4,
     user: "673c0b58fe4f013c2b82726b",
-    restaurant: "673637b66f6515f00b51fb6c",
+    restaurant: "673637b66f6515f00b51fb74",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {
@@ -167,7 +167,7 @@ module.exports = [
       "Could not stop helping myself to the buffet spread! The food is amazing!",
     rating: 4,
     user: "673c0b58fe4f013c2b82726c",
-    restaurant: "673637b66f6515f00b51fb6c",
+    restaurant: "673637b66f6515f00b51fb74",
     createdAt: "2024-11-15T14:05:38.833+00:00",
   },
   {
@@ -194,7 +194,7 @@ module.exports = [
       "Amazing flavors and incredible presentation! The seafood platter was fresh and cooked to perfection, and the desserts were a heavenly treat. A must-visit for anyone looking for quality dining.",
     rating: 4,
     user: "673c0b58fe4f013c2b82726f",
-    restaurant: "673637b66f6515f00b51fb6c",
+    restaurant: "673637b66f6515f00b51fb74",
     createdAt: "2024-11-15T14:05:38.833+00:00",
   },
   {
@@ -428,7 +428,7 @@ module.exports = [
       "The buffet was incredible with diverse options. I loved the freshly cooked seafood, crispy tempura, and the pasta station. The desserts, especially the tiramisu and cakes, were the perfect finish.",
     rating: 5,
     user: "673c0b58fe4f013c2b82726b",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {
@@ -437,7 +437,7 @@ module.exports = [
       "Amazing variety at this buffet! From spicy Indian curries to fresh sushi rolls, every bite was delicious. The carving station had succulent roasts, and the chocolate fountain was a crowd favorite.",
     rating: 5,
     user: "673c0b58fe4f013c2b82726c",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-15T14:05:38.833+00:00",
   },
   {
@@ -446,7 +446,7 @@ module.exports = [
       "This buffet had something for everyone. The salads were crisp, the grilled meats juicy, and the seafood fresh. The live cooking stations added an interactive and fun element to the experience.",
     rating: 5,
     user: "673c0b58fe4f013c2b82726d",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-17T14:05:38.833+00:00",
   },
   {
@@ -455,7 +455,7 @@ module.exports = [
       "I was impressed by the quality and selection at the buffet. The sashimi was fresh, the dim sum delightful, and the desserts irresistible. Great value for money and a truly enjoyable meal.",
     rating: 5,
     user: "673c0b58fe4f013c2b82726e",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {
@@ -464,7 +464,7 @@ module.exports = [
       "The highlight of this buffet was the wide variety of dishes. The pizzas were freshly baked, the roasts perfectly tender, and the desserts, especially the cheesecake, were absolutely divine!",
     rating: 5,
     user: "673c0b58fe4f013c2b82726f",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-15T14:05:38.833+00:00",
   },
   {
@@ -473,7 +473,7 @@ module.exports = [
       "The seafood section was outstanding with crab, prawns, and oysters. I also loved the Asian dishes and the dessert bar. Everything was well-prepared, flavorful, and beautifully presented.",
     rating: 5,
     user: "673c0b58fe4f013c2b827270",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-19T14:05:38.833+00:00",
   },
   {
@@ -482,7 +482,7 @@ module.exports = [
       "Awesome Food and great service. Enjoyed the 1 for 1 promotion too!",
     rating: 5,
     user: "673c0b58fe4f013c2b827271",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-15T14:05:38.833+00:00",
   },
   {
@@ -491,7 +491,7 @@ module.exports = [
       "Every item at this buffet was a treat. The barbecue ribs were perfectly cooked, the sushi was fresh, and the pasta station offered great customization. The staff were friendly and helpful too!",
     rating: 5,
     user: "673c0b58fe4f013c2b827272",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-14T14:05:38.833+00:00",
   },
   {
@@ -500,7 +500,7 @@ module.exports = [
       "This buffet had an expansive menu with everything from creamy curries to crisp salads. The roasted lamb was a standout dish, and the chocolate mousse was the perfect way to end the meal.",
     rating: 5,
     user: "673c0b58fe4f013c2b827273",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {
@@ -509,7 +509,7 @@ module.exports = [
       "From the moment we walked in, the variety and quality were evident. The seafood was fresh, the curries rich and aromatic, and the desserts were plentiful and indulgent. Highly recommend!",
     rating: 5,
     user: "673c0b58fe4f013c2b827274",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-18T14:05:38.833+00:00",
   },
   {
@@ -518,7 +518,43 @@ module.exports = [
       "One of the best buffet experiences! The pizza was wood-fired perfection, the sashimi was melt-in-your-mouth fresh, and the dessert counter was overflowing with delectable treats. Excellent value!",
     rating: 5,
     user: "673c0b58fe4f013c2b827275",
-    restaurant: "673637b66f6515f00b51fb74",
+    restaurant: "673637b66f6515f00b51fb6c",
+    createdAt: "2024-11-16T14:05:38.833+00:00",
+  },
+  {
+    title: "Decent, but Could Be Better",
+    review:
+      "The buffet had a good variety of dishes, but some items were not as fresh as I expected. The sushi was a bit lackluster, and the grilled meats were slightly overcooked. However, the dessert selection was nice, and the service was decent. Overall, it was an okay experience, but I expected a bit more given the price.",
+    rating: 3,
+    user: "673c0b58fe4f013c2b827276",
+    restaurant: "673637b66f6515f00b51fb6c",
+    createdAt: "2024-11-16T14:05:38.833+00:00",
+  },
+  {
+    title: "Good but Not Exceptional",
+    review:
+      "The buffet had a decent selection, but some of the hot dishes were cold by the time I reached them. The carving station was nice, but the roasts could have been more flavorful. The dessert section was a highlight, but overall, the experience didn't blow me away. It's a good option for a casual meal but not for a special occasion.",
+    rating: 3,
+    user: "673c0b58fe4f013c2b827277",
+    restaurant: "673637b66f6515f00b51fb6c",
+    createdAt: "2024-11-15T14:05:38.833+00:00",
+  },
+  {
+    title: "Average Buffet Experience",
+    review:
+      "I had high expectations, but the buffet was just average. Some dishes, like the pasta, were underwhelming and lacked flavor. The salad bar was fresh, but the overall variety of hot dishes didn't impress me. Service was decent, but nothing stood out. It's an okay place for a quick meal, but I wouldn't recommend it for a special night out.",
+    rating: 3,
+    user: "673c0b58fe4f013c2b827278",
+    restaurant: "673637b66f6515f00b51fb6c",
+    createdAt: "2024-11-17T14:05:38.833+00:00",
+  },
+  {
+    title: "Not Bad, But Room for Improvement",
+    review:
+      "The buffet was fine, but it wasn't as exciting as I had hoped. The selection was decent, but some items, like the seafood, were a bit bland. The pasta station was fun, but the sauces could have been better. The dessert offerings were good, but not outstanding. Overall, a fine experience but not something I'd rush back for.",
+    rating: 3,
+    user: "673c0b58fe4f013c2b827279",
+    restaurant: "673637b66f6515f00b51fb6c",
     createdAt: "2024-11-16T14:05:38.833+00:00",
   },
   {

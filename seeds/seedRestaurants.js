@@ -483,7 +483,7 @@ module.exports = [
   },
   {
     _id: "673637b66f6515f00b51fb7d",
-    name: "Peppermint, PARKROYAL COLLECTION Marina Bay, Singapore",
+    name: "Peppermint, PARKROYAL COLLECTION Marina Bay",
     img: [
       "https://danielfooddiary.com/wp-content/uploads/2024/08/maybankbuffet1.jpg",
       "https://cdn.idem.events/guests/d22435df5d5d4ed48814dc71587779d6.jpg",
