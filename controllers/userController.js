@@ -53,11 +53,31 @@ const getUserProfile = async (req, res, next) => {
       },
     ]);
     res.json({
-      user: { _id: user._id, name: user.name, createdAt: user.createdAt },
+      user: {
+        _id: user._id,
+        name: user.name,
+        createdAt: user.createdAt,
+        profileImage: user.profileImage,
+      },
       reviews,
     });
   } catch (error) {
     return next(new CustomError("Failed to fetch user and reviews.", 500));
+  }
+};
+
+const getUserById = async (req, res, next) => {
+  try {
+    const user = await User.findById(req.params.id).select(
+      "-password -favourites"
+    );
+    if (!user) {
+      return next(new CustomError("No user found with provided id.", 404));
+    }
+
+    res.json(user);
+  } catch (error) {
+    return next(new CustomError("Failed to fetch user.", 500));
   }
 };
 
@@ -71,4 +91,4 @@ const seedUsersData = async (req, res, next) => {
   }
 };
 
-module.exports = { getUserProfile, seedUsersData };
+module.exports = { getUserProfile, getUserById, seedUsersData };

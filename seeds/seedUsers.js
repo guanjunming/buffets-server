@@ -5,6 +5,7 @@ module.exports = [
     email: "amanda@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-10-17T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-1.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b82726c",
@@ -12,6 +13,7 @@ module.exports = [
     email: "benny@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-09-13T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-2.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b82726d",
@@ -19,6 +21,7 @@ module.exports = [
     email: "claudia@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-08-13T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-3.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b82726e",
@@ -26,6 +29,7 @@ module.exports = [
     email: "daryl@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-10-10T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-4.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b82726f",
@@ -33,6 +37,7 @@ module.exports = [
     email: "emily@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-07-10T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-5.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b827270",
@@ -40,6 +45,7 @@ module.exports = [
     email: "franky@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2023-12-17T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-6.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b827271",
@@ -47,6 +53,7 @@ module.exports = [
     email: "germaine@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2023-11-13T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-7.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b827272",
@@ -54,6 +61,7 @@ module.exports = [
     email: "hilda@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-05-09T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-8.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b827273",
@@ -61,6 +69,7 @@ module.exports = [
     email: "ian@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-11-10T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-9.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b827274",
@@ -68,6 +77,7 @@ module.exports = [
     email: "jane@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-11-01T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-10.jpg",
   },
   {
     _id: "673c0b58fe4f013c2b827275",
@@ -75,5 +85,6 @@ module.exports = [
     email: "kendrick@example.com",
     password: "$2b$12$PUDUqgLiduyUxIRAwKcSvOB5NC37juiDGIHoaPjMn51jETYsit9Fa",
     createdAt: "2024-11-01T06:13:27.955+00:00",
+    profileImage: "/public/images/default-avatar-11.jpg",
   },
 ];

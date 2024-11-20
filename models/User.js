@@ -24,6 +24,17 @@ const userSchema = new mongoose.Schema({
       ref: "Restaurant",
     },
   ],
+  profileImage: {
+    type: String,
+  },
+});
+
+userSchema.pre("save", function (next) {
+  if (!this.profileImage) {
+    const randIdx = Math.floor(Math.random() * 10) + 1;
+    this.profileImage = `/public/images/default-avatar-${randIdx}.jpg`;
+  }
+  next();
 });
 
 module.exports = mongoose.model("User", userSchema);
