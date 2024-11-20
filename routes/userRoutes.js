@@ -11,6 +11,7 @@ const {
 } = require("../validators/userValidators");
 const checkErrors = require("../validators/checkErrors");
 const checkAuth = require("../middleware/checkAuth");
+const { validateIdInParam } = require("../validators/commonValidators");
 
 const router = express.Router();
 
@@ -46,5 +47,12 @@ router.patch(
 );
 
 router.get("/profile", checkAuth, userController.getUserProfile);
+
+router.get(
+  "/users/:id",
+  validateIdInParam,
+  checkErrors,
+  userController.getUserById
+);
 
 module.exports = router;

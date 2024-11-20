@@ -66,6 +66,21 @@ const getUserProfile = async (req, res, next) => {
   }
 };
 
+const getUserById = async (req, res, next) => {
+  try {
+    const user = await User.findById(req.params.id).select(
+      "-password -favourites"
+    );
+    if (!user) {
+      return next(new CustomError("No user found with provided id.", 404));
+    }
+
+    res.json(user);
+  } catch (error) {
+    return next(new CustomError("Failed to fetch user.", 500));
+  }
+};
+
 const seedUsersData = async (req, res, next) => {
   try {
     await User.deleteMany({});
@@ -76,4 +91,4 @@ const seedUsersData = async (req, res, next) => {
   }
 };
 
-module.exports = { getUserProfile, seedUsersData };
+module.exports = { getUserProfile, getUserById, seedUsersData };
