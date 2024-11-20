@@ -1,7 +1,6 @@
 const express = require("express");
 const authController = require("../controllers/authController");
 const userController = require("../controllers/userController");
-const catchAsync = require("../utils/catchAsync");
 
 const {
   validateSignupData,
@@ -17,18 +16,8 @@ const router = express.Router();
 
 router.get("/seed", userController.seedUsersData);
 
-router.post(
-  "/signup",
-  validateSignupData,
-  checkErrors,
-  catchAsync(authController.signup)
-);
-router.post(
-  "/login",
-  validateLoginData,
-  checkErrors,
-  catchAsync(authController.login)
-);
+router.post("/signup", validateSignupData, checkErrors, authController.signup);
+router.post("/login", validateLoginData, checkErrors, authController.login);
 router.post("/refresh", authController.refresh);
 
 router.patch(

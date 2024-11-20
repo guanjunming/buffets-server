@@ -22,7 +22,7 @@ const checkAuth = (req, res, next) => {
     next();
   } catch (error) {
     return next(
-      new CustomError("Token invalid or expired. Please log in again.", 401)
+      new CustomError("Authentication failed! Token invalid or expired.", 401)
     );
   }
 };

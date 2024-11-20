@@ -28,44 +28,52 @@ const sendAccessToken = (user, statusCode, res) => {
 };
 
 const signup = async (req, res, next) => {
-  const { name, email, password } = req.body;
+  try {
+    const { name, email, password } = req.body;
 
-  const user = await User.findOne({ email: email });
-  if (user) {
-    return next(
-      new CustomError("This email address has already been registered.", 422)
-    );
+    const user = await User.findOne({ email: email });
+    if (user) {
+      return next(
+        new CustomError("This email address has already been registered.", 422)
+      );
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 12);
+
+    const newUser = await User.create({
+      name,
+      email,
+      password: hashedPassword,
+    });
+
+    sendAccessToken(newUser, 201, res);
+  } catch (error) {
+    return next(new CustomError("Failed to register user.", 500));
   }
-
-  const hashedPassword = await bcrypt.hash(password, 12);
-
-  const newUser = await User.create({
-    name,
-    email,
-    password: hashedPassword,
-  });
-
-  sendAccessToken(newUser, 201, res);
 };
 
 const login = async (req, res, next) => {
-  const { email, password } = req.body;
+  try {
+    const { email, password } = req.body;
 
-  const user = await User.findOne({ email: email });
-  if (!user) {
-    return next(
-      new CustomError("You have entered an incorrect email or password.", 401)
-    );
+    const user = await User.findOne({ email: email });
+    if (!user) {
+      return next(
+        new CustomError("You have entered an incorrect email or password.", 401)
+      );
+    }
+
+    const isValidPassword = await bcrypt.compare(password, user.password);
+    if (!isValidPassword) {
+      return next(
+        new CustomError("You have entered an incorrect email or password.", 401)
+      );
+    }
+
+    sendAccessToken(user, 200, res);
+  } catch (error) {
+    return next(new CustomError("Failed to login user.", 500));
   }
-
-  const isValidPassword = await bcrypt.compare(password, user.password);
-  if (!isValidPassword) {
-    return next(
-      new CustomError("You have entered an incorrect email or password.", 401)
-    );
-  }
-
-  sendAccessToken(user, 200, res);
 };
 
 const refresh = (req, res, next) => {

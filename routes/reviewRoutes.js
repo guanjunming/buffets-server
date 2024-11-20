@@ -1,5 +1,4 @@
 const express = require("express");
-const catchAsync = require("../utils/catchAsync");
 const checkAuth = require("../middleware/checkAuth");
 const reviewController = require("../controllers/reviewController");
 const { validateReviewData } = require("../validators/reviewValidators");

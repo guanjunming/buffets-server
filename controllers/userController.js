@@ -85,9 +85,9 @@ const seedUsersData = async (req, res, next) => {
   try {
     await User.deleteMany({});
     await User.insertMany(seedUsers);
-    res.json({ status: "success", message: "Seeding successful" });
+    res.json({ message: "Seeding users successful." });
   } catch (error) {
-    return next(new CustomError("Seeding failed", 500));
+    return next(new CustomError("Seeding users failed.", 500));
   }
 };
 

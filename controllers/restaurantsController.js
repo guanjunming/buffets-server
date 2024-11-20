@@ -6,9 +6,9 @@ const seedRestaurantsData = async (req, res, next) => {
   try {
     await Restaurant.deleteMany({});
     await Restaurant.insertMany(seedRestaurants);
-    res.json({ status: "success", message: "Seeding successful" });
+    res.json({ message: "Seeding restaurants successful." });
   } catch (error) {
-    return next(new CustomError("Seeding failed", 500));
+    return next(new CustomError("Seeding restaurants failed.", 500));
   }
 };
 
@@ -72,7 +72,9 @@ const getRestaurantsMaxPriceCuisines = async (req, res, next) => {
       { $group: { _id: null, maxPrice: { $max: "$adultPrice.min" } } },
       { $project: { _id: 0, maxPrice: 1 } },
     ]);
+
     const cuisines = await Restaurant.distinct("cuisine");
+
     res.json({ maxPrice: restaurantsMaxPrice[0].maxPrice, cuisines });
   } catch (error) {
     return next(

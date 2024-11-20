@@ -13,7 +13,7 @@ const getAllFavourites = async (req, res, next) => {
       return next(new CustomError("No user found with provided id.", 404));
     }
 
-    return res.json(user.favourites);
+    return res.json(user.favourites.reverse());
   } catch (error) {
     return next(new CustomError("Failed to get favourites.", 500));
   }
