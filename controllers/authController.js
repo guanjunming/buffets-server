@@ -10,7 +10,7 @@ const sendAccessToken = (user, statusCode, res) => {
   };
 
   const accessToken = jwt.sign(claims, process.env.ACCESS_SECRET, {
-    expiresIn: "15m",
+    expiresIn: "1h",
   });
 
   const refreshToken = jwt.sign(claims, process.env.REFRESH_SECRET, {
@@ -91,7 +91,7 @@ const refresh = (req, res, next) => {
     };
 
     const accessToken = jwt.sign(claims, process.env.ACCESS_SECRET, {
-      expiresIn: "15m",
+      expiresIn: "1h",
     });
 
     res.json({ accessToken, userId: claims.id });
