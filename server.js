@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 const express = require("express");
 const connectDB = require("./db/db");
 const cors = require("cors");
@@ -22,9 +23,11 @@ const app = express();
 
 app.use(cors());
 app.use(helmet());
+app.use(helmet({ crossOriginResourcePolicy: { policy: "cross-origin" } }));
 app.use(limiter);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use("/public", express.static(path.join(__dirname, "public")));
 
 // routes
 app.use("/api/restaurants", restaurantsRoutes);

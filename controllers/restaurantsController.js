@@ -53,7 +53,7 @@ const getRestaurantById = async (req, res, next) => {
     const restaurant = await Restaurant.findById(req.params.id).populate({
       path: "reviews",
       options: { sort: { createdAt: -1 } },
-      populate: { path: "user", select: "name" },
+      populate: { path: "user", select: "name profileImage" },
     });
 
     if (!restaurant) {

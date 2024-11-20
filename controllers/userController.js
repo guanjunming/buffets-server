@@ -53,7 +53,12 @@ const getUserProfile = async (req, res, next) => {
       },
     ]);
     res.json({
-      user: { _id: user._id, name: user.name, createdAt: user.createdAt },
+      user: {
+        _id: user._id,
+        name: user.name,
+        createdAt: user.createdAt,
+        profileImage: user.profileImage,
+      },
       reviews,
     });
   } catch (error) {
