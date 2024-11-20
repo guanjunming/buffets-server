@@ -31,7 +31,7 @@ const userSchema = new mongoose.Schema({
 
 userSchema.pre("save", function (next) {
   if (!this.profileImage) {
-    const randIdx = Math.floor(Math.random() * 10) + 1;
+    const randIdx = Math.floor(Math.random() * 20) + 1;
     this.profileImage = `/public/images/default-avatar-${randIdx}.jpg`;
   }
   next();
