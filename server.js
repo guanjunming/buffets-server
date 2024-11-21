@@ -13,7 +13,7 @@ const favouriteRoutes = require("./routes/favouriteRoutes");
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 900,
+  max: 500,
   standardHeaders: true,
   legacyHeaders: false,
 });
