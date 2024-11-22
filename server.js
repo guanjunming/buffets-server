@@ -37,7 +37,10 @@ app.use("/api/favourites", favouriteRoutes);
 
 // route not found
 app.use((req, res, next) => {
-  const error = new CustomError("Can't find route on server.", 404);
+  const error = new CustomError(
+    `Can't find route ${req.originalUrl} on server.`,
+    404
+  );
   next(error);
 });
 
