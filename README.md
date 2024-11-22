@@ -1,3 +1,5 @@
-# Buffets Server (back-end)
+# Buffets Server
 
-The link to the front-end Buffet Sg application can be found here: [Buffets Sg](https://github.com/guanjunming/buffets-sg)
+This repository is for the backend of the Buffet SG application.
+
+The link to the Buffet SG frontend repository can be found here: [Buffets SG](https://github.com/guanjunming/buffets-sg)
